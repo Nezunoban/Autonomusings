@@ -1,0 +1,7 @@
+baseURL = "https://github.com/Nezunoban/autonomusings"
+languageCode = "en-us"
+title = "Autonomusings"
+
+theme = ["my-shortcodes", "base-theme", "hyde-hyde", "autono"]
+relatedPosts = true
+
