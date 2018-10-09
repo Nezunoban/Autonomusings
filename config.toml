@@ -19,7 +19,7 @@ publishDir = "docs"
 
 ## Site Settings
 [params]
-    # author = "Author"
+    author = "Autonomusings"
     # title = "Title"
     # description = "..."
     authorimage = "/img/logo.png"
