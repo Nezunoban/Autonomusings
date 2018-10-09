@@ -6,5 +6,4 @@ theme = ["autono"]
 relatedPosts = true
 publishDir = "docs"
 
-
 authorimage = "/img/logo.png"
