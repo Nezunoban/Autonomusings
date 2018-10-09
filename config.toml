@@ -4,7 +4,7 @@ title = "Autonomusings"
 
 theme = ["autono"]
 relatedPosts = true
-# Test comment
+## Test comment
 publishDir = "docs"
 
 authorimage = "/img/logo.png"
