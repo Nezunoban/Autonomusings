@@ -1,4 +1,4 @@
-# Changelog
+# HYDE-HYDE Changelog
 
 __2018-09__
 
@@ -23,7 +23,7 @@ __Version 2.0__
 
 * The main styles are refactored and redeveloped using SCSS (see [_static-src/scss_](https://github.com/htr3n/hyde-hyde/tree/v2.0.0/static-src/scss))
   and we no longer need `poole.css` and `hyde.css` because `hyde-hyde.scss` already incorporates relevant elements
-  * `Hyde-hyde` can be customised by changing SCSS styles in [_static-src/scss/hyde-hyde_](https://github.com/htr3n/hyde-hyde/tree/v2.0.0/static-src/scss/hyde-hyde) and layouts in [_layouts_](https://github.com/htr3n/hyde-hyde/tree/v2.0.0/layouts) 
+  * `hyde-hyde` can be customised by changing SCSS styles in [_static-src/scss/hyde-hyde_](https://github.com/htr3n/hyde-hyde/tree/v2.0.0/static-src/scss/hyde-hyde) and layouts in [_layouts_](https://github.com/htr3n/hyde-hyde/tree/v2.0.0/layouts) 
   * To generate `hyde-hyde.css`, please use any SCSS compiler to compile the main file  `hyde-hyde.scss`
 * Restructure/modularise further the layouts (see [_layouts_](https://github.com/htr3n/hyde-hyde/tree/v2.0.0/layouts))
 * Add '[_Portfolio_](https://github.com/htr3n/hyde-hyde/tree/v2.0.0/layouts/portfolio)' page inspired by Xiaoying Riley ([@3rdwave_themes](https://twitter.com/3rdwave_themes)) [Developer-Theme](https://github.com/xriley/developer-theme)

@@ -304,11 +304,10 @@ a.read-more-symbol {
 }
 
 .sidebar {
-  background-color: #300030;
-  color: white;
-  color: rgba(255, 255, 255, 0.5);
+  color: #353e4a;
+  color: rgba(48, 54, 60, 0.75);
   padding: 2rem 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 .sidebar a {
@@ -334,7 +333,7 @@ a.read-more-symbol {
 }
 
 .sidebar-nav {
-  text-align: center;
+  text-align: left;
   list-style: none;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -1023,4 +1022,4 @@ a.badge-tag:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
-/*# sourceMappingURL=hyde-hyde.css.map */
+/*# sourceMappingURL=autono.css.map */

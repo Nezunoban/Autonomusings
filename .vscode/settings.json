@@ -1,0 +1,26 @@
+{
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/themes/autono/static/css/"
+        }
+        /* // You can add more
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/../dist/css"
+        },
+        // More Complex
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css/"
+        }
+        */
+    ],
+
+    "liveSassCompile.settings.excludeList": [
+        "/themes/*[!(autono)]"
+    ]
+}

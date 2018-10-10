@@ -9,6 +9,11 @@ $gray-7: #767676;
 $gray-8: #515151;
 $gray-9: #313131;
 
+$dark: rgb(53, 62, 74);
+$mid: rgb(116, 116, 129);
+$light: rgb(176, 176, 182);
+$purple: rgb(147, 63, 143);
+
 $white: #fff;
 $red: #ac4142;
 $orange: #d28445;
@@ -37,7 +42,7 @@ $large-breakpoint: 38em;
 $large-font-size: 20px;
 //
 
-// hyde-hyde
+// autono
 $small-device-font-size: $root-font-size;
 $large-device-font-size: $large-font-size;
 
@@ -87,7 +92,7 @@ $h5-font-size:1rem;
 
 
 // sidebar
-$sidebar-color: #300030;
+$sidebar-color: #fff;
 $site__title-font-size: 3rem;
 $copyright-font-size: 0.7rem;
 
