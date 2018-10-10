@@ -9,10 +9,14 @@ $gray-7: #767676;
 $gray-8: #515151;
 $gray-9: #313131;
 
-$dark: rgb(53, 62, 74);
+$dark: rgb(48, 54, 60);
+$darkish: rgb(53, 62, 74);
+$dark-trans: rgba(48, 54, 60, 0.75);
 $mid: rgb(116, 116, 129);
 $light: rgb(176, 176, 182);
 $purple: rgb(147, 63, 143);
+
+
 
 $white: #fff;
 $red: #ac4142;
@@ -24,8 +28,8 @@ $blue: #268bd2;
 $brown: #8f5536;
 
 //https://www.client9.com/css-system-font-stack-sans-serif-v3
-$root-font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
-
+$root-font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+$paragraph-font-family: 'Lora', 'Garamond', 'Georgia', sans-serif;
 // poole's variables
 $root-font-size: 17px;
 $root-font-weight: 400;

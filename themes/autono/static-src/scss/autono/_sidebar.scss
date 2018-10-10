@@ -1,18 +1,18 @@
 .sidebar {
   //background-color: $sidebar-color;
   
-  color: rgb(53, 62, 74);
-  color: rgba(48, 54, 60, 0.75);
+  color: $darkish;
+  color: $dark-trans;
   padding: 2rem 1rem;
   text-align: left;
   a {
-    color: $gray-1;
+    color: $dark;
     border: none;
     &:hover {
-      color: $link-color;
+      color: $purple;
     }
     &:focus {
-      color: $link-color;
+      color: $purple;
     }
   }
   .sidebar-about {
