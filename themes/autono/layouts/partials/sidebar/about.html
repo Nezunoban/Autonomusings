@@ -5,7 +5,7 @@
   {{ with .Site.Params.authorimage }}
   {{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
   {{ $authorImage := (printf "%s/%s" $.Site.BaseURL $strippedSlash) }}
-  <div class="author-image">
+  <div class="home-logo">
     <img src="{{$authorImage}}" alt="Author Image" class="element--center">
   </div>
   {{ end }}

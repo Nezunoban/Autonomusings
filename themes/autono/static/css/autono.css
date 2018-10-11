@@ -10,7 +10,7 @@ body {
 }
 
 html {
-  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Lora", "Garamond", "Georgia", sans-serif;
   font-size: 17px;
   line-height: 1.667em;
 }
@@ -142,6 +142,22 @@ footer {
   color: inherit;
 }
 
+/**
+ ********************************
+ * _ACCESSIBILITY.SCSS
+ ********************************
+ */
+/**
+ * @mixin accessibility
+ * @description Hide content off-screen without resorting to 'display:none;'.
+ *
+ * @param {string} [$important=''] Option to append values with !important
+ *
+ * @example
+    .foo {
+      @include accessibility;
+    }
+ */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -150,7 +166,7 @@ footer {
 html {
   -webkit-text-size-adjust: 100%;
   box-direction: normal;
-  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Lora", "Garamond", "Georgia", sans-serif;
   font-size: 17px;
   line-height: 1.667em;
 }
@@ -165,6 +181,7 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
 
@@ -304,6 +321,7 @@ a.read-more-symbol {
 }
 
 .sidebar {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #353e4a;
   color: rgba(48, 54, 60, 0.75);
   padding: 2rem 1rem;
@@ -327,7 +345,7 @@ a.read-more-symbol {
   text-align: center;
 }
 
-.sidebar .author-image {
+.sidebar .home-logo {
   display: block;
   margin-top: 4px;
 }
@@ -352,6 +370,14 @@ a.read-more-symbol {
 .site__title {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  border: 0 ;
+  clip: rect(0 0 0 0) ;
+  height: 1px ;
+  margin: -1px ;
+  overflow: hidden ;
+  padding: 0 ;
+  position: absolute ;
+  width: 1px ;
 }
 
 .site__title a:hover {
@@ -567,6 +593,7 @@ ul.pagination li.page-item.active a {
   max-width: calc(100% - 0px);
   margin: 0 auto;
   margin-top: 60px;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .navigation a {

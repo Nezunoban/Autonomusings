@@ -5,7 +5,7 @@
 html {
 	-webkit-text-size-adjust: 100%; // for iOS
 	box-direction: normal;
-	font-family: $root-font-family;
+	font-family: $body-font-family;
 	font-size: $small-device-font-size;
   line-height: $root-line-height;
 }
@@ -19,6 +19,7 @@ h1,
 h2,
 h3,
 h4 {
+	font-family: $secondary-font-family;
 	font-weight: $heading-font-weight;
 }
 
@@ -85,7 +86,7 @@ blockquote {
 }
 
 kbd {
-	font-family: $root-font-family;
+	font-family: $secondary-font-family;
 	padding: 2px 7px;
 	border: 1px solid $gray-4;
 	font-size: 0.8em;

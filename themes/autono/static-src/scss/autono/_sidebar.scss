@@ -1,5 +1,6 @@
 .sidebar {
   //background-color: $sidebar-color;
+  font-family: $secondary-font-family;
   
   color: $darkish;
   color: $dark-trans;
@@ -18,7 +19,7 @@
   .sidebar-about {
     text-align: center;
   }
-  .author-image {
+  .home-logo {
     display: block;
     margin-top: 4px;
   }
@@ -42,6 +43,7 @@
 .site__title {
   font-size: $site__title-font-size;
   margin-bottom: 0.5rem;
+  @include accessibility;
   a:hover {
     border: none;
   }
