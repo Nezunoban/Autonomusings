@@ -43,10 +43,10 @@ theme = "autono"
 
 ## Main Menu
 [[menu.main]]
-    name = "Posts"
+    name = "Musings"
     weight = 100
-    identifier = "posts"
-    url = "/posts/"
+    identifier = "musings"
+    url = "/musings/"
 [[menu.main]]
     name = "Portfolio"
     identifier = "portfolio"

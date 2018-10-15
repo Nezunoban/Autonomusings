@@ -1,18 +1,24 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
+title: "Jason Bourne"
+subject_name: Jason Bourne
+subject_title: Title
+subject_organization: Organizational Company
+subject_image: interviews/images/people/pic01.jpg
+author: Josh Ouellette
+date: 2018-10-13T15:15:00-07:00
+lastmod: 2018-10-13T15:15:00-07:00
+featured_image: interviews/images/pic01.jpg
 tags : [ "dev", "hugo", "autono"]
 categories : [ "dev" ]
 layout: post
-type:  "post"
+type:  "interviews"
 highlight: false
-draft: true
+draft: false
 ---
 
 **Insert Lead paragraph here.**
 
-A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin. Curae cursus inceptos tincidunt magna mi nibh ad enim etiam, molestie eu quis primis hendrerit taciti phasellus. Feugiat ultricies dictumst iaculis potenti odio laoreet urna at, ultrices curae leo accumsan proin sem lobortis. 
+A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin. Curae cursus inceptos tincidunt magna mi nibh ad enim etiam, molestie eu quis primis hendrerit taciti phasellus. Feugiat ultricies dictumst iaculis potenti odio laoreet urna at, ultrices curae leo accumsan proin sem lobortis.
 
 ## Heading 2
 

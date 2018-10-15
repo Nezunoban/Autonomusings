@@ -46,15 +46,15 @@ publishDir = "docs"
 
 ## Main Menu
 [[menu.main]]
-    name = "Posts"
+    name = "Musings"
     weight = 100
-    identifier = "posts"
-    url = "/posts/"
+    identifier = "musings"
+    url = "/musings/"
 [[menu.main]]
-    name = "Portfolio"
-    identifier = "portfolio"
+    name = "Updates"
+    identifier = "updates"
     weight = 200
-    url = "/portfolio/"
+    url = "/updates/"
 [[menu.main]]
     name = "About"
     identifier = "about"

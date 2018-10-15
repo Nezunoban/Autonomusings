@@ -15,12 +15,12 @@ $dark-trans: rgba(48, 54, 60, 0.75);
 $mid: rgb(116, 116, 129);
 $light: rgb(176, 176, 182);
 $purple: rgb(147, 63, 143);
+$orange: #FD6E1B;
 
 
 
 $white: #fff;
 $red: #ac4142;
-$orange: #d28445;
 $yellow: #f4bf75;
 $green: #90a959;
 $cyan: #75b5aa;
@@ -59,8 +59,8 @@ $code-background-color: #f9f2f4;
 $code-line-height: 1.4;
 
 // links
-$link-color: $blue;
-$link-hover-color: $body-color;
+$link-color: $purple;
+$link-hover-color: $orange;
 
 // section
 $section__title-font-size: 2.15rem;

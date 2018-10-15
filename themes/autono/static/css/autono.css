@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  color: #268bd2;
+  color: #933f8f;
   text-decoration: none;
 }
 
@@ -261,7 +261,7 @@ kbd {
 }
 
 a {
-  color: #268bd2;
+  color: #933f8f;
   text-decoration: none;
   word-wrap: break-word;
 }
@@ -277,7 +277,7 @@ a.sidebar-nav-item:focus {
 }
 
 a:focus {
-  color: #515151;
+  color: #FD6E1B;
   border-bottom: 1px dotted #bbb;
   text-decoration: none;
   background: transparent;
@@ -291,7 +291,7 @@ a:focus.tag {
 }
 
 a:hover {
-  color: #515151;
+  color: #FD6E1B;
   border-bottom: 1px dotted #bbb;
   text-decoration: none;
   background: transparent;
