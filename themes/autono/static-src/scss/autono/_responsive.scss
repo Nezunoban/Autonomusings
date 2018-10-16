@@ -130,7 +130,7 @@
 @media (min-width: 992px) {
   html,
   body {
-    font-size: $large-device-font-size;
+    //font-size: $large-device-font-size;
   }
   .content {
     margin-left: 20rem;
@@ -159,4 +159,8 @@
 // 1024px ~  64rem/16px ~ 60.2353rem/17px 56.8889rem/18px
 @media (min-width: 1024px) {
   // styles
+  html,
+  body {
+    //font-size: $large-device-font-size;
+  }
 }
