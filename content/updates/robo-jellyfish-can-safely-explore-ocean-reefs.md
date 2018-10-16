@@ -5,7 +5,7 @@ source_name: Name of Publication
 source_url: https://www..com
 date: 2018-10-13T15:16:15-07:00
 lastmod: 2018-10-13T15:16:15-07:00
-featured_image: updates/images/pic01.jpg
+featured_image: updates/images/pic-default.jpg
 tags : [ "dev", "hugo", "autono"]
 categories : [ "dev" ]
 layout: update

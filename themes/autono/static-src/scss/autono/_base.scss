@@ -5,9 +5,9 @@
 html {
 	-webkit-text-size-adjust: 100%; // for iOS
 	box-direction: normal;
-	font-family: $body-font-family;
+	//font-family: $body-font-family;
 	font-size: $small-device-font-size;
-  line-height: $root-line-height;
+  	line-height: $root-line-height;
 }
 
 html, body {
@@ -138,4 +138,8 @@ a {
 .content {
 	padding-bottom: 2rem;
 	padding-top: 2rem;
+}
+
+.post__meta {
+	font-family: $secondary-font-family;
 }

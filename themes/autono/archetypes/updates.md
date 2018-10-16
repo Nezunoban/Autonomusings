@@ -5,7 +5,7 @@ source_name: Name of Publication
 source_url: https://www..com
 date: {{ .Date }}
 lastmod: {{ .Date }}
-featured_image: updates/images/pic01.jpg
+featured_image: updates/images/pic-default.jpg
 tags : [ "dev", "hugo", "autono"]
 categories : [ "dev" ]
 layout: update

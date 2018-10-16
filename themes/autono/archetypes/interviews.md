@@ -3,11 +3,11 @@ title: "{{ replace .Name "-" " " | title }}"
 subject_name: Jason Bourne
 subject_title: Title
 subject_organization: Organizational Company
-subject_image: interviews/images/people/pic01.jpg
+subject_image: interviews/images/people/pic-default.jpg
 author: Josh Ouellette
 date: {{ .Date }}
 lastmod: {{ .Date }}
-featured_image: interviews/images/pic01.jpg
+featured_image: interviews/images/pic-default.jpg
 tags : [ "dev", "hugo", "autono"]
 categories : [ "dev" ]
 layout: interview
