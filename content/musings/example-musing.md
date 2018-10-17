@@ -1,17 +1,15 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Example Musing"
 author: Josh Ouellette
-source_name: Name of Publication
-source_url: https://www..com
-date: {{ .Date }}
-lastmod: {{ .Date }}
-featured_image: /updates/images/pic-default.jpg
+date: 2018-10-16T12:24:08-07:00
+lastmod: 2018-10-16T12:24:08-07:00
+featured_image: /musings/images/pic-default.jpg
 categories : [ "automation" ]
-tags : [ "robotics", "hugo", "autono"]
-layout: update
-type:  "update"
+tags : [ "manufacturing", "efficiency", "automation"]
+layout: post
+type:  "musings"
 highlight: false
-draft: true
+draft: false
 ---
 
 **Insert Lead paragraph here.**

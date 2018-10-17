@@ -1,6 +1,8 @@
-<article>
+<div class="featured__container --fixed">
+    <!--<img {{ with .Params.featured_image }} class="featured_image" src="{{ . }}"{{ end }} alt="{{ .Title }}">-->
+</div>
+<article class="article--featured">
   <header>
-    <img {{ with .Params.featured_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
     <h1>{{ .Title }}</h1>
     {{ with .Params.subtitle }}
     <span class="post__subtitle">

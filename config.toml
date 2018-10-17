@@ -4,8 +4,8 @@ title = "Autonomusings"
 
 theme = ["autono"]
 relatedPosts = true
-## Test comment
 publishDir = "docs"
+canonifyurls = true
 
 
 ## Hugo Built-in Features

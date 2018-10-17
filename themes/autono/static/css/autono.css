@@ -188,6 +188,7 @@ h1 {
   font-size: 2.15rem;
   line-height: 1.25;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 h2 {
@@ -484,6 +485,37 @@ a.read-more-symbol {
 
 #references li {
   font-size: 0.9rem;
+}
+
+.article--featured {
+  position: relative;
+  background: white;
+}
+
+@media (min-width: 768px) {
+  .article--featured {
+    margin: 4em 3em 3em;
+    padding: 2em 3em;
+  }
+  .featured__wrap--fixed {
+    position: absolute;
+    width: 80%;
+  }
+  .featured__container {
+    position: relative;
+    top: 0;
+    height: 15em;
+    display: block;
+    overflow: hidden;
+    margin-top: -2em;
+  }
+  .featured_image {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+    margin: 0;
+    position: absolute;
+  }
 }
 
 pre {
@@ -910,7 +942,7 @@ a.badge-tag:focus {
   .content {
     margin-left: 20rem;
     margin-right: 2rem;
-    max-width: 38rem;
+    max-width: 48rem;
   }
   .layout-reverse .content {
     margin-left: 4rem;
