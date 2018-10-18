@@ -5,7 +5,9 @@ title = "Autonomusings"
 theme = ["autono"]
 relatedPosts = true
 publishDir = "docs"
-canonifyurls = true
+canonifyURLs = true
+
+summaryLength = 20
 
 
 ## Hugo Built-in Features

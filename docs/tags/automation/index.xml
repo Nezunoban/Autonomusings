@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Autonomusings</title>
+    <link>https://github.com/Nezunoban/autonomusings/tags/automation/</link>
+    <description>Recent content in Automation on Autonomusings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Oct 2018 12:24:08 -0700</lastBuildDate>
+    
+	<atom:link href="https://github.com/Nezunoban/autonomusings/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Musing</title>
+      <link>https://github.com/Nezunoban/autonomusings/musings/example-musing/</link>
+      <pubDate>Tue, 16 Oct 2018 12:24:08 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/musings/example-musing/</guid>
+      <description>Insert Lead paragraph here.
+A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
+    </item>
+    
+    <item>
+      <title>Robotic Jellyfish</title>
+      <link>https://github.com/Nezunoban/autonomusings/musings/robotic-jellyfish/</link>
+      <pubDate>Sat, 13 Oct 2018 14:51:16 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/musings/robotic-jellyfish/</guid>
+      <description>Insert Lead paragraph here.
+A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,18 +6,49 @@
     <description>Recent content on Autonomusings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Oct 2018 12:49:35 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 16 Oct 2018 12:24:08 -0700</lastBuildDate>
     
 	<atom:link href="https://github.com/Nezunoban/autonomusings/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Robotic Jellyfish, Spiders, and School Buses</title>
-      <link>https://github.com/Nezunoban/autonomusings/robotic-jellyfish-spiders-school-buses/</link>
-      <pubDate>Sat, 13 Oct 2018 12:49:35 -0700</pubDate>
+      <title>Example Musing</title>
+      <link>https://github.com/Nezunoban/autonomusings/musings/example-musing/</link>
+      <pubDate>Tue, 16 Oct 2018 12:24:08 -0700</pubDate>
       
-      <guid>https://github.com/Nezunoban/autonomusings/robotic-jellyfish-spiders-school-buses/</guid>
-      <description></description>
+      <guid>https://github.com/Nezunoban/autonomusings/musings/example-musing/</guid>
+      <description>Insert Lead paragraph here.
+A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
+    </item>
+    
+    <item>
+      <title>Robo Jellyfish Can Safely Explore Ocean Reefs</title>
+      <link>https://github.com/Nezunoban/autonomusings/updates/robo-jellyfish-can-safely-explore-ocean-reefs/</link>
+      <pubDate>Sat, 13 Oct 2018 15:16:15 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/updates/robo-jellyfish-can-safely-explore-ocean-reefs/</guid>
+      <description>Insert Lead paragraph here.
+A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
+    </item>
+    
+    <item>
+      <title>Robotic Jellyfish</title>
+      <link>https://github.com/Nezunoban/autonomusings/musings/robotic-jellyfish/</link>
+      <pubDate>Sat, 13 Oct 2018 14:51:16 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/musings/robotic-jellyfish/</guid>
+      <description>Insert Lead paragraph here.
+A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
+    </item>
+    
+    <item>
+      <title>Jason Bourne</title>
+      <link>https://github.com/Nezunoban/autonomusings/interviews/jason-bourne/</link>
+      <pubDate>Mon, 01 Oct 2018 15:15:00 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/interviews/jason-bourne/</guid>
+      <description>Insert Lead paragraph here.
+A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
     </item>
     
   </channel>

@@ -6,9 +6,37 @@
     <description>Recent content in Categories on Autonomusings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 16 Oct 2018 12:24:08 -0700</lastBuildDate>
     
 	<atom:link href="https://github.com/Nezunoban/autonomusings/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automation</title>
+      <link>https://github.com/Nezunoban/autonomusings/categories/automation/</link>
+      <pubDate>Tue, 16 Oct 2018 12:24:08 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/categories/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Autonotalks</title>
+      <link>https://github.com/Nezunoban/autonomusings/categories/autonotalks/</link>
+      <pubDate>Mon, 01 Oct 2018 15:15:00 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/categories/autonotalks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>https://github.com/Nezunoban/autonomusings/categories/dev/</link>
+      <pubDate>Sat, 13 Oct 2018 15:16:15 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/categories/dev/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

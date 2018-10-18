@@ -45,7 +45,6 @@ img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
 }
 
 table {
@@ -179,33 +178,46 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.section__title {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 400;
 }
 
-h1 {
+h1,
+.section__title {
   font-size: 2.15rem;
   line-height: 1.25;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
+.section__title,
+.upper {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
 h2 {
   font-size: 1.85rem;
   margin-bottom: .5rem;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 h4 {
   font-size: 1.3rem;
+  font-weight: 400;
 }
 
 h5 {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 figure {
@@ -247,7 +259,7 @@ blockquote {
 kbd {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 2px 7px;
-  border: 1px solid #bbb;
+  border: 1px solid #ccc;
   font-size: 0.8em;
   line-height: 1.4;
   background-color: #f3f3f3;
@@ -278,7 +290,7 @@ a.sidebar-nav-item:focus {
 
 a:focus {
   color: #FD6E1B;
-  border-bottom: 1px dotted #bbb;
+  border-bottom: 1px dotted #ccc;
   text-decoration: none;
   background: transparent;
   background-color: transparent;
@@ -292,7 +304,7 @@ a:focus.tag {
 
 a:hover {
   color: #FD6E1B;
-  border-bottom: 1px dotted #bbb;
+  border-bottom: 1px dotted #ccc;
   text-decoration: none;
   background: transparent;
   background-color: transparent;
@@ -318,6 +330,44 @@ a.read-more-symbol {
 .content {
   padding-bottom: 2rem;
   padding-top: 2rem;
+}
+
+.item__wrap {
+  margin-left: 16rem;
+  clear: none;
+  background-color: white;
+  padding: 0 4rem;
+  position: relative;
+}
+
+.profile-image {
+  margin: 0 auto 1rem;
+}
+
+.interview__subject-image {
+  position: absolute;
+  width: 16rem;
+}
+
+.interview__subject-image,
+.featured-image {
+  position: absolute;
+  max-width: 16rem;
+}
+
+.post-list__item:nth-child(1) {
+  height: 30rem;
+}
+
+.post-list__item:nth-child(1) .item__wrap {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem 4rem;
+}
+
+.post-list__item:nth-child(1) .featured-image {
+  max-width: 45rem;
+  width: 45rem;
 }
 
 .sidebar {
@@ -358,6 +408,14 @@ a.read-more-symbol {
   padding-left: 0;
 }
 
+.sidebar-nav li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .25em;
+  padding: .8rem;
+  display: block;
+}
+
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
@@ -365,6 +423,14 @@ a.read-more-symbol {
 
 .sidebar-nav-item .active {
   font-weight: bold;
+}
+
+.sidebar-nav__link {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .25em;
+  padding: .8rem;
+  display: block;
 }
 
 .site__title {
@@ -415,6 +481,7 @@ a.read-more-symbol {
 .copyright {
   text-align: center;
   font-size: 0.7rem;
+  line-height: 1.667em;
 }
 
 .section__title {
@@ -423,12 +490,29 @@ a.read-more-symbol {
 
 .post-list__item {
   margin-bottom: 3em;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2.5rem;
+  padding-left: 7rem;
+  margin-left: -7rem;
 }
 
 .item__title--big {
   display: block;
   font-size: 1.785rem;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
   line-height: 1.25;
+}
+
+.item__title--big a {
+  color: #30363c;
+}
+
+.item__title--big a:hover, .item__title--big a:focus {
+  border-style: none;
+  text-decoration: none;
+  border-bottom: 1px solid #933f8f;
 }
 
 .item__title--small {
@@ -436,11 +520,23 @@ a.read-more-symbol {
 }
 
 .item__date {
-  color: #9a9a9a;
+  color: #a4a4ad;
   display: block;
   font-size: 1rem;
   margin-bottom: .2rem;
   margin-top: .2rem;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.autonotalks-presents {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #a4a4ad;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.subject_organization {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .post__meta {
@@ -516,6 +612,15 @@ a.read-more-symbol {
     margin: 0;
     position: absolute;
   }
+}
+
+span.featured-time {
+  display: inline-block;
+  width: 5rem;
+  position: absolute;
+  left: 0;
+  color: #a4a4ad;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 pre {
@@ -693,16 +798,18 @@ ul.pagination li.page-item.active a {
 
 .badge-category,
 a.badge-category {
-  color: #fff !important;
-  background-color: #0088cc;
+  color: #933f8f !important;
+  background: transparent;
+  background-color: transparent;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-transform: uppercase;
 }
 
 .badge-category:hover, .badge-category:focus,
 a.badge-category:hover,
 a.badge-category:focus {
-  color: #0088cc !important;
-  background: transparent;
-  background-color: transparent;
+  color: #fff !important;
+  background-color: #933f8f;
   text-decoration: none;
   border-bottom: none;
 }
@@ -710,13 +817,13 @@ a.badge-category:focus {
 .badge-tag,
 a.badge-tag {
   color: #fff !important;
-  background-color: #7766cc;
+  background-color: #933f8f;
 }
 
 .badge-tag:hover, .badge-tag:focus,
 a.badge-tag:hover,
 a.badge-tag:focus {
-  color: #7766cc !important;
+  color: #933f8f !important;
   background: transparent;
   background-color: transparent;
   text-decoration: none;
@@ -727,12 +834,16 @@ a.badge-tag:focus {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 0.75rem;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
+}
+
+.badge:nth-child(1) {
+  margin-left: -0.25em;
 }
 
 .portfolio__content section {
@@ -940,7 +1051,7 @@ a.badge-tag:focus {
 
 @media (min-width: 992px) {
   .content {
-    margin-left: 20rem;
+    margin-left: 26rem;
     margin-right: 2rem;
     max-width: 48rem;
   }
@@ -959,6 +1070,15 @@ a.badge-tag:focus {
   .portfolio-container {
     width: 1360px;
   }
+}
+
+@media (min-width: 1024px) {
+  /*
+  html,
+  body {
+    font-size: $large-device-font-size;
+  }
+  */
 }
 
 .element--center {

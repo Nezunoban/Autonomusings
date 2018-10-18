@@ -34,3 +34,12 @@
 		position: absolute;
 	}
 }
+
+span.featured-time {
+    display: inline-block;
+    width: 5rem;
+    position: absolute;
+	left: 0;
+	color: $light;
+	font-family: $secondary-font-family;
+}

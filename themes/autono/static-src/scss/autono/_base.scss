@@ -18,33 +18,45 @@ html, body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.section__title {
 	font-family: $secondary-font-family;
-	font-weight: $heading-font-weight;
 }
 
-h1 {
+h1,
+.section__title {
 	font-size: $h1-font-size;
 	line-height: $h1-line-height;
 	margin-bottom: 1rem;
     font-weight: 600;
 }
+.section__title,
+.upper {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
 
 h2 {
 	font-size: $h2-font-size;
 	margin-bottom: .5rem;
+	font-weight: $heading-font-weight;
 }
 
 h3 {
 	font-size: $h3-font-size;
+	font-weight: $heading-font-weight;
 }
 
 h4 {
 	font-size: $h4-font-size;
+	font-weight: $heading-font-weight;
 }
 
 h5 {
 	font-size: $h5-font-size;
+	font-weight: $heading-font-weight;
 }
 
 figure {
@@ -142,4 +154,37 @@ a {
 }
 
 
+.item__wrap {
+    margin-left: 16rem;
+    clear: none;
+    background-color: white;
+    padding: 0 4rem;
+    position: relative;
+}
 
+.profile-image {
+    margin: 0 auto 1rem;
+}
+
+.interview__subject-image {    
+    position: absolute;
+    width: 16rem;
+}
+.interview__subject-image,
+.featured-image {    
+    position: absolute;
+    max-width: 16rem
+}
+.post-list__item:nth-child(1) {
+    height: 30rem;
+}
+.post-list__item:nth-child(1) .item__wrap{
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 4rem;
+}
+.post-list__item:nth-child(1) .featured-image {
+    max-width: 45rem;
+    width: 45rem;
+
+}

@@ -12,6 +12,7 @@ layout: update
 type:  "update"
 highlight: false
 draft: true
+summarylength : 20
 ---
 
 **Insert Lead paragraph here.**

@@ -1,11 +1,13 @@
 .badge-category,
 a.badge-category {
-  color: #fff !important;
-  background-color: #0088cc;
+  color: $purple !important;
+  background: transparent;
+  background-color: transparent;
+  font-family: $secondary-font-family;
+  text-transform: uppercase;
   &:hover, &:focus {
-    color: #0088cc !important;
-    background: transparent;
-    background-color: transparent;
+    color: #fff !important;
+    background-color: $purple;
     text-decoration: none;
     border-bottom: none;
   }
@@ -14,9 +16,9 @@ a.badge-category {
 .badge-tag,
 a.badge-tag {
   color: #fff !important;
-  background-color: #7766cc;
+  background-color: $purple;
   &:hover, &:focus {
-    color: #7766cc !important;
+    color: $purple !important;
     background: transparent;
     background-color: transparent;
     text-decoration: none;
@@ -28,10 +30,13 @@ a.badge-tag {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 0.75rem;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
+}
+.badge:nth-child(1) {
+  margin-left: -0.25em;
 }

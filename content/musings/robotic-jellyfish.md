@@ -10,6 +10,7 @@ layout: post
 type:  "musings"
 highlight: false
 draft: false
+summarylength : 20
 ---
 
 **Insert Lead paragraph here.**

@@ -8,12 +8,14 @@ author: Josh Ouellette
 date: {{ .Date }}
 lastmod: {{ .Date }}
 featured_image: /interviews/images/pic-default.jpg
-categories : [ "automation" ]
+## Categories: Must be set to "AutonoTalks" for proper formatting for interview in front page list
+categories : [ "AutonoTalks" ]
 tags : [ "dev", "hugo", "autono"]
 layout: interview
 type:  "interview"
 highlight: false
 draft: true
+summarylength : 20
 ---
 
 **Insert Lead paragraph here.**
