@@ -31,7 +31,20 @@
 }
 
 .item__title--small {
+	display: block;
 	font-size: 1rem;
+	font-family: $secondary-font-family;
+	font-weight: 600;
+	line-height: 1.25;
+	a {
+		color: $dark;
+		&:hover,
+		&:focus {
+			@include link-no-decoration();
+			//color: $purple;
+			border-bottom: 1px solid $purple;
+		}
+	}
 }
 
 .item__date {
@@ -45,11 +58,14 @@
 
 .autonotalks-presents {
 	font-family: $secondary-font-family;
-	color: $light;
+	color: $mid;
 	font-size: 0.75rem;
 	text-transform: uppercase;
+    margin-left: -.5em;
+    font-weight: 300;
 }
 
 .subject_organization {
 	font-family: $secondary-font-family;
+	font-weight: 500;
 }

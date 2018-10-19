@@ -5,6 +5,8 @@
     {{ partial "sidebar.html" . }}
         <div class="content container">
             {{ block "content" . }}{{ end }}
+            {{ partial "sidebar-2.html" . }}
+            {{ partial "micromodal-updates.html" . }}
         </div>
         {{ block "footer" . }}{{ end }}
     </body>

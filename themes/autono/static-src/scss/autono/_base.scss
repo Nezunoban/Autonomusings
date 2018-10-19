@@ -35,7 +35,12 @@ h1,
 	text-transform: uppercase;
 	letter-spacing: .2em;
     padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+	padding-top: 1.5rem;
+	color: $dark;
+	font-size: 1.85rem;
+}
+.front__header {
+	margin-top: 6rem;
 }
 
 h2 {
@@ -82,7 +87,8 @@ figure {
 
 blockquote {
 	background-color: #fafafa;
-	border-left-color: #e6e6e6;
+	border-top-color: $light;
+	border-bottom-color: $light;
 	@extend %quotebox;
 }
 
@@ -147,44 +153,109 @@ a {
 	}
 }
 
+@media (min-width: 992px) {
+	.content {
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+	}
 
-.content {
-	padding-bottom: 2rem;
-	padding-top: 2rem;
+	.front-item__wrap {
+		margin-left: 16rem;
+		clear: none;
+		background-color: white;
+		padding: 0 4rem;
+		position: relative;
+		font-size: .8rem;
+		line-height: 1.8em;
+		.item__title--big {
+			font-size: 1.5rem;
+		}
+	}
+
+	.profile-image {
+		margin: 0 auto 1rem;
+	}
+
+	.interview__subject-image {    
+		position: absolute;
+		width: 16rem;
+	}
+
+	.interview__subject-image,
+	.featured-image {    
+		position: absolute;
+		max-width: 16rem
+	}
+
+	.post-list__item:nth-child(1) {
+		height: 30rem;
+	}
+	.post-list__item:nth-child(1) .front-item__wrap{
+		position: absolute;
+		bottom: 0;
+		padding: 1.5rem 4rem;
+		font-size: 1rem;
+		.item__title--big {
+			font-size: 1.785rem;
+		}
+	}
+
+	.post-list__item:nth-child(1) .featured-image {
+		max-width: 45rem;
+		width: 45rem;
+	}
+
+	
+
 }
 
-
-.item__wrap {
-    margin-left: 16rem;
-    clear: none;
-    background-color: white;
-    padding: 0 4rem;
-    position: relative;
+@media (min-width: 1660px) {
+	.sidebar-2 {
+		position: absolute;
+		right: 5rem;
+		top: 6rem;
+	}
+}
+.post-list-item__body {
+    margin-top: .5rem;
+    line-height: 1.667em;
 }
 
-.profile-image {
-    margin: 0 auto 1rem;
+.sidebar-2 {
+	display: block;
+    max-width: 20rem;
+	background-color: $body-bg;
+}
+.sidebar-2 .section-title.upper {
+    padding-bottom: .75rem;
 }
 
-.interview__subject-image {    
-    position: absolute;
-    width: 16rem;
+.sidebar-2__container {
+    padding: 1rem 3rem;
 }
-.interview__subject-image,
-.featured-image {    
-    position: absolute;
-    max-width: 16rem
-}
-.post-list__item:nth-child(1) {
-    height: 30rem;
-}
-.post-list__item:nth-child(1) .item__wrap{
-    position: absolute;
-    bottom: 0;
-    padding: 1.5rem 4rem;
-}
-.post-list__item:nth-child(1) .featured-image {
-    max-width: 45rem;
-    width: 45rem;
 
+.sidebar__updates {
+    padding-left: 0;
+}
+
+.sidebar__updates .item__date{
+	display: inline;
+    padding-top: 0.35em;
+	font-size: 0.75rem;
+	&::before {
+		content: "-  ";
+		padding-right: .4em;
+	}
+}
+
+.sidebar-post-list__item {
+	margin-top: 1rem;
+	&::after {
+		content: "";
+		display: block;
+		width: 5rem;
+		height: 1px;
+		margin-top: 1rem;
+		background-color: $light;
+	}
 }

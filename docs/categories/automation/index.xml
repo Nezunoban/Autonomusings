@@ -6,10 +6,19 @@
     <description>Recent content in Automation on Autonomusings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Oct 2018 12:24:08 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 18 Oct 2018 12:08:52 -0700</lastBuildDate>
     
 	<atom:link href="https://github.com/Nezunoban/autonomusings/categories/automation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Guinness: Six-Legged Robot is World&#39;s Largest</title>
+      <link>https://github.com/Nezunoban/autonomusings/updates/guinness-6-legged-robot-worlds-largest/</link>
+      <pubDate>Thu, 18 Oct 2018 12:08:52 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/updates/guinness-6-legged-robot-worlds-largest/</guid>
+      <description>What Happened: At quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.</description>
+    </item>
     
     <item>
       <title>Example Musing</title>
@@ -17,6 +26,16 @@
       <pubDate>Tue, 16 Oct 2018 12:24:08 -0700</pubDate>
       
       <guid>https://github.com/Nezunoban/autonomusings/musings/example-musing/</guid>
+      <description>Insert Lead paragraph here.
+A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
+    </item>
+    
+    <item>
+      <title>Example Musing 2</title>
+      <link>https://github.com/Nezunoban/autonomusings/musings/example-musing-2/</link>
+      <pubDate>Mon, 15 Oct 2018 12:24:08 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/musings/example-musing-2/</guid>
       <description>Insert Lead paragraph here.
 A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
     </item>

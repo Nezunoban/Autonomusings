@@ -157,6 +157,266 @@ footer {
       @include accessibility;
     }
  */
+/**************************\
+  Basic Modal Styles
+\**************************/
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__container {
+  background-color: #fff;
+  max-width: 500px;
+  max-height: 100vh;
+  border-radius: 4px;
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal__header {
+  max-height: 10rem;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal__close {
+  background: transparent;
+  border: 0;
+  padding: .5rem;
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.modal__header .modal__close:before {
+  content: "\2715";
+}
+
+.modal__content {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  padding: 1.25rem 2rem 0 2rem;
+}
+
+.modal__footer {
+  padding: .5rem 2rem 1rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.modal__btn {
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: .25rem;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  text-transform: uppercase;
+  overflow: visible;
+  line-height: 1.15;
+  margin-right: .5rem;
+  will-change: transform;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: -webkit-transform .25s ease-out;
+  -webkit-transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+  background-color: #30363c;
+  color: #fff;
+}
+
+.modal__btn:focus, .modal__btn:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/*
+.modal__btn-primary {
+  background-color: #00449e;
+  color: #fff;
+}
+*/
+.modal__content p {
+  font-size: .8rem;
+  margin-top: 0;
+  font-family: "Lora", "Garamond", "Georgia", sans-serif;
+}
+
+.modal__content h3 {
+  font-size: .75rem;
+  font-weight: 700;
+  margin-bottom: .25rem;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.modal__source {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  position: absolute;
+  right: 30px;
+}
+
+.modal__source:hover, .modal__source:focus {
+  border-style: none;
+  text-decoration: none;
+  color: #933f8f;
+}
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@-webkit-keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes mmslideIn {
+  from {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes mmslideIn {
+  from {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes mmslideOut {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+@keyframes mmslideOut {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  -webkit-animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  -webkit-animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  -webkit-animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  -webkit-animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -197,6 +457,12 @@ h1,
   letter-spacing: .2em;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+  color: #30363c;
+  font-size: 1.85rem;
+}
+
+.front__header {
+  margin-top: 6rem;
 }
 
 h2 {
@@ -243,7 +509,8 @@ blockquote, .important, .warning {
 
 blockquote {
   background-color: #fafafa;
-  border-left-color: #e6e6e6;
+  border-top-color: #a4a4ad;
+  border-bottom-color: #a4a4ad;
 }
 
 .important {
@@ -327,47 +594,106 @@ a.read-more-symbol {
   text-decoration: none;
 }
 
-.content {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+@media (min-width: 992px) {
+  .content {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .front-item__wrap {
+    margin-left: 16rem;
+    clear: none;
+    background-color: white;
+    padding: 0 4rem;
+    position: relative;
+    font-size: .8rem;
+    line-height: 1.8em;
+  }
+  .front-item__wrap .item__title--big {
+    font-size: 1.5rem;
+  }
+  .profile-image {
+    margin: 0 auto 1rem;
+  }
+  .interview__subject-image {
+    position: absolute;
+    width: 16rem;
+  }
+  .interview__subject-image,
+  .featured-image {
+    position: absolute;
+    max-width: 16rem;
+  }
+  .post-list__item:nth-child(1) {
+    height: 30rem;
+  }
+  .post-list__item:nth-child(1) .front-item__wrap {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 4rem;
+    font-size: 1rem;
+  }
+  .post-list__item:nth-child(1) .front-item__wrap .item__title--big {
+    font-size: 1.785rem;
+  }
+  .post-list__item:nth-child(1) .featured-image {
+    max-width: 45rem;
+    width: 45rem;
+  }
 }
 
-.item__wrap {
-  margin-left: 16rem;
-  clear: none;
-  background-color: white;
-  padding: 0 4rem;
-  position: relative;
+@media (min-width: 1660px) {
+  .sidebar-2 {
+    position: absolute;
+    right: 5rem;
+    top: 6rem;
+  }
 }
 
-.profile-image {
-  margin: 0 auto 1rem;
+.post-list-item__body {
+  margin-top: .5rem;
+  line-height: 1.667em;
 }
 
-.interview__subject-image {
-  position: absolute;
-  width: 16rem;
+.sidebar-2 {
+  display: block;
+  max-width: 20rem;
+  background-color: #fff;
 }
 
-.interview__subject-image,
-.featured-image {
-  position: absolute;
-  max-width: 16rem;
+.sidebar-2 .section-title.upper {
+  padding-bottom: .75rem;
 }
 
-.post-list__item:nth-child(1) {
-  height: 30rem;
+.sidebar-2__container {
+  padding: 1rem 3rem;
 }
 
-.post-list__item:nth-child(1) .item__wrap {
-  position: absolute;
-  bottom: 0;
-  padding: 1.5rem 4rem;
+.sidebar__updates {
+  padding-left: 0;
 }
 
-.post-list__item:nth-child(1) .featured-image {
-  max-width: 45rem;
-  width: 45rem;
+.sidebar__updates .item__date {
+  display: inline;
+  padding-top: 0.35em;
+  font-size: 0.75rem;
+}
+
+.sidebar__updates .item__date::before {
+  content: "-  ";
+  padding-right: .4em;
+}
+
+.sidebar-post-list__item {
+  margin-top: 1rem;
+}
+
+.sidebar-post-list__item::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 1px;
+  margin-top: 1rem;
+  background-color: #a4a4ad;
 }
 
 .sidebar {
@@ -516,7 +842,21 @@ a.read-more-symbol {
 }
 
 .item__title--small {
+  display: block;
   font-size: 1rem;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.item__title--small a {
+  color: #30363c;
+}
+
+.item__title--small a:hover, .item__title--small a:focus {
+  border-style: none;
+  text-decoration: none;
+  border-bottom: 1px solid #933f8f;
 }
 
 .item__date {
@@ -530,13 +870,16 @@ a.read-more-symbol {
 
 .autonotalks-presents {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #a4a4ad;
+  color: #747481;
   font-size: 0.75rem;
   text-transform: uppercase;
+  margin-left: -.5em;
+  font-weight: 300;
 }
 
 .subject_organization {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
 }
 
 .post__meta {
@@ -1069,6 +1412,10 @@ a.badge-tag:focus {
   }
   .portfolio-container {
     width: 1360px;
+  }
+  .sidebar .sidebar-about {
+    text-align: center;
+    max-width: 80%;
   }
 }
 

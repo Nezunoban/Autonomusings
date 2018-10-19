@@ -1,17 +1,17 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Guinness: Six-Legged Robot is World's Largest"
 author: Josh Ouellette
-source_name: Name of Publication
-source_url: https://www..com
-date: {{ .Date }}
-lastmod: {{ .Date }}
+source_name: www.upi.com
+source_url: https://www.upi.com/Guinness-dubs-six-legged-walking-robot-the-worlds-largest/7151537206326/
+date: 2018-10-18T12:08:52-07:00
+lastmod: 2018-10-18T12:08:52-07:00
 featured_image: /updates/images/pic-default.jpg
 categories : [ "automation" ]
 tags : [ "robotics", "hugo", "autono"]
 layout: update
 type:  "update"
 highlight: false
-draft: true
+draft: false
 summarylength : 20
 ---
 
