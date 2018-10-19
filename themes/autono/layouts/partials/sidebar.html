@@ -11,7 +11,13 @@
               {{ with .Site.Params.authorimage }}
               {{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
               {{ $authorImage := (printf "%s/%s" $.Site.BaseURL $strippedSlash) }}
-              <img src="{{$authorImage}}" alt="Logo Image" class="element--center">
+              <img src="{{$authorImage}}" alt="Logo Image" class="element--center logo--large">
+              {{ end }}
+
+              {{ with .Site.Params.authorimagesmall }}
+              {{ $strippedSlash := ($.Site.Params.authorimagesmall | replaceRE "^(/)+(.*)" "$2") }}
+              {{ $authorImageSmall := (printf "%s/%s" $.Site.BaseURL $strippedSlash) }}
+              <img src="{{$authorImageSmall}}" alt="Logo Image" class="logo--small">
               {{ end }}
             </a>
       </div>
@@ -21,7 +27,7 @@
     </div>
     <div class="collapsible-menu">
       <input type="checkbox" id="menuToggle">
-      <label for="menuToggle">{{ .Site.Title }}</label>
+      <label for="menuToggle"><span class="menuToggle__text hidden">menu</span></label>
       <div class="menu-content">
         {{ partial "sidebar/menu.html" . }}
         {{ partial "sidebar/social.html" . }}

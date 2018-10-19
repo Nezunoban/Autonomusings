@@ -3,6 +3,7 @@
 {{ end }}
 
 {{ define "content" }}
+
 <h1 class="upper front__header">Musings</h1>
   <div class="post-list">
     {{ $paginator := .Paginate (where .Data.Pages "Section" "in" (slice "musings" "interviews")) }}
