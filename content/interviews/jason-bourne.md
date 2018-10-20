@@ -10,11 +10,13 @@ lastmod: 2018-10-01T15:15:00-07:00
 featured_image: /interviews/images/pic-default.jpg
 categories : [ "AutonoTalks" ]
 tags : [ "dev", "hugo", "autono"]
-layout: post
+layout: interview
 type:  "interviews"
 highlight: false
 draft: false
 ---
+
+{{< vimeo 146022717 >}}
 
 **Insert Lead paragraph here.**
 

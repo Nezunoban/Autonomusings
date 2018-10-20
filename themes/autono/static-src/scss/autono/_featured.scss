@@ -8,7 +8,7 @@
 	position: relative;
 	background: white;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 	.article--featured {
 		margin: 7em 3em 3em;
 		padding: 2em 3em;
@@ -36,7 +36,6 @@
 }
 
 span.featured-time {
-    display: inline-block;
     width: 5rem;
     position: absolute;
 	left: 0;

@@ -75,23 +75,23 @@
     max-height: 0;
     overflow: hidden;
     margin-top: 0;
+    top: 4.8rem;
     position: absolute;
     right: 1rem;
-    background: $body-bg;
     //border-bottom: 1px solid $mid;
-    z-index: 100;
+    z-index: 3;
   }
   .collapsible-menu {
     padding: 0px 0px; 
   }
   .collapsible-menu ul {
-    list-style-type: none;
+    margin-top: 0;
     padding: 0 0 1rem 0;
-  
+    list-style-type: none;
+    text-align: right;
+    background: $gray-2;
     border-bottom: 3px solid $dark;
     border-right: 2px solid $light;
-    margin-top: 4.5rem;
-    text-align: right;
   }
   .collapsible-menu li {
     display: block;
@@ -109,7 +109,7 @@
     position: absolute;
     right: 1rem;
     top: 2rem;
-    z-index: 101;
+    //z-index: 5;
   }
   
   input#menuToggle {
@@ -120,6 +120,7 @@
   }
 
   input#menuToggle:checked + label {
+    background-color: $gray-2;
     background-image: url(../img/menu-close-dark.svg); 
     border-right: 2px solid $light;
     //color: #fff;
@@ -132,12 +133,108 @@
     padding: 1em 0 1em 0;
   }
 
+  .post-list__item .featured-image {
+    max-height: 10rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
 
 
   /*  TABS  */
 
-  
+  .tabs .switch {
+    display: none;
+    width: 68%;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
+    z-index: 1;
+    $font-family: $secondary-font-family;
+    text-transform: uppercase;
+  }
+
+  .tab-links {
+    display: flex;
+    padding-bottom: 1em;
+    position: absolute;
+    top: 2.4rem;
+    width: 68%;
+    padding-left: 3rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tab-links .tab {
+    width: 50%;
+    padding: .25rem 1rem 3px;
+    font-size: .8rem;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $body-bg;
+  }
+
+  .tabs .tab {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    border-bottom: 1px solid $light;
+  }
+
+  #musings-switch:checked ~ .tab-links #musings-tab,
+  #updates-switch:checked ~ .tab-links #updates-tab {
+    //background-color: #fff;
+    color: $dark;
+    cursor: default;
+    border-bottom: 3px solid $purple;
+  }
+
+  .tabs .panel {
+    position: absolute;
+    display: inline-block;
+    left: -9999;
+    bottom: -9999;
+    opacity: 0;
+  }
+
+  /* This is the magic - http://alistapart.com/article/radio-controlled-web-design */
+  #musings-switch:checked ~ .panels #musings-switch-panel,
+  #updates-switch:checked ~ .panels #updates-switch-panel {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+
+  /* PRESENTATIONAL STYLES */
+
+
+  .tabs .tab {
+    &:hover,
+    &:focus {
+      color: $purple;
+    }
+  }
+
+  span.featured-time {
+    display:none;
+  }
+
+
+  /* Remove redundant Updates from mobile front page */
+  /* and update list */
+
+  .page-autonomusings,
+  .page-updates {
+    .sidebar-2__container {
+      display: none;
+    }
+  }
 
 }
 
@@ -147,6 +244,9 @@
   html,
   body {
     font-size: $small-device-font-size;
+  }
+  .tablist-front {
+    display: none;
   }
 
   .logo--small {
@@ -204,6 +304,24 @@
   .sidebar-2__container {
     padding: 0rem 3rem;
   }
+
+
+  span.featured-time {
+    display: none;
+  }
+
+/*  TABS  */
+
+  .tabs .switch {
+    display: none;
+  }
+  .tabs .tab-links {
+    display: none;
+  }
+  #updates-switch-panel {
+    display: none;
+  }
+
 }
 
 // Large devices (laptops/desktops, 992px and up) 
@@ -236,6 +354,10 @@
     text-align: center;
     max-width: 80%;
   }
+
+  span.featured-time {
+    display: none;
+  }
 }
 
 // Large device ~1024px
@@ -248,4 +370,10 @@
     font-size: $large-device-font-size;
   }
   */
+
+  span.featured-time {
+    display: inline-block;
+  }
+  
 }
+

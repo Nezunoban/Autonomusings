@@ -5,7 +5,20 @@
 </div>
 <article class="article--featured">
   <header>
-    <h1>{{ .Title }}</h1>
+    <span class="item__categories">
+      <!-- categories -->
+        {{ with .Params.categories }}
+        {{ $total := len . }}
+        {{ if gt $total 0 }}
+          {{ $total := sub $total 1 }}
+            {{ range $i, $cat := sort . }}
+              <a class="badge badge-category {{ $cat | urlize }}" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
+              {{ if lt $i $total }}•{{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+    </span>
+    <h1 class="post__title">{{ .Title }}</h1>
     {{ with .Params.subtitle }}
     <span class="post__subtitle">
       {{.}}
@@ -26,6 +39,9 @@
   </div>
   {{ end }}
   <div class="post">
+    {{ if eq .Params.executive_summary true }}
+      {{ partial "page-single/executive-summary.html" . }}
+    {{ end }}
     {{ .Content }}
   </div>
   {{ partial "page-single/post-navigation.html" . }}

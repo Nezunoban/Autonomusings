@@ -11,6 +11,15 @@ type:  "musings"
 highlight: false
 draft: false
 summarylength : 20
+
+## Do you want the executive summary for this post?
+executive_summary: true
+## A sentence or two to summarize the piece ('' required for colon)
+executive_intro : 'In this particular musing, we discuss the matter at hand, including:'
+## Bullet Point summary - Up to 5 points allowed 
+executive_point1 : The matter at hand
+executive_point2 : Of course we also touch on the importance of the matter at hand, for educational purposes, including long points
+executive_point3 : The matter at hand
 ---
 
 **Insert Lead paragraph here.**
