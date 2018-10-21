@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-author: Josh Ouellette
+authors: ["Josh Ouellette"]
 date: {{ .Date }}
 lastmod: {{ .Date }}
 featured_image: /musings/images/pic-default.jpg

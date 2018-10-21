@@ -1,0 +1,16 @@
+<div class="author-bio">
+	<div class="author-bio__img"> 
+			<img class="profile-image img--circle" src="{{ .Params.photo }}" alt="{{ .Params.name }}">
+	</div>
+	<div class="author-bio__text">
+			<span class="author-bio__by">by</span><span class="author-bio__name">{{ .Params.name }}</span>
+			<div class="author-bio__description">{{ .Params.bio }}</div>
+	</div>
+</div>
+
+<h2>Articles</h2>
+<ul>
+{{ range .Data.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>

@@ -1,0 +1,16 @@
+{{ with .Params.authors }}
+	{{ range $ind,$val := . }}
+		{{$author := $val | urlize }}
+		{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+					<div class="author-bio--partial">
+						<div class="author-bio__img"> 
+								<img class="profile-image img--circle" src="{{ .Params.photo }}" alt="{{ .Params.name }}">
+						</div>
+						<div class="author-bio__text">
+								<span class="author-bio__by">by</span><a class="author-bio__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
+								<div class="author-bio__description">{{ .Params.bio }}</div>
+						</div>
+					</div>
+		{{ end -}}
+  {{ end }}
+{{ end }}

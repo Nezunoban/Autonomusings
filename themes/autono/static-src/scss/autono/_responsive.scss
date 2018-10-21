@@ -4,6 +4,7 @@
 .hidden {
   visibility: hidden;
 }
+
 @media (min-width: 0px) and (max-width: 767px) {
   html,
   body {
@@ -328,9 +329,6 @@
   input#menuToggle + label {
     display: none;
   }
-  .sidebar-2__container {
-    padding: 0rem 3rem;
-  }
 
 
   span.featured-time {
@@ -361,6 +359,16 @@
     margin-top: -1rem;
     margin-bottom: -1rem;
   }
+
+
+
+  .author-bio .author-bio__img {
+		.profile-image {
+			height: 12rem;
+			width: auto;
+			max-width: none;
+	}
+}
 
 }
 
@@ -393,6 +401,9 @@
   .sidebar .sidebar-about {
     text-align: center;
     max-width: 80%;
+  }
+  .sidebar-2__container {
+    padding: 0rem 3rem;
   }
 
   span.featured-time {

@@ -4,7 +4,7 @@ subject_name: Jason Bourne
 subject_title: Title
 subject_organization: Organizational Company
 subject_image: /interviews/images/people/pic-default.jpg
-author: Josh Ouellette
+authors: ["Josh Ouellette"]
 date: {{ .Date }}
 lastmod: {{ .Date }}
 featured_image: /interviews/images/pic-default.jpg

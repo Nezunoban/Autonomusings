@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-author: Josh Ouellette
+authors: ["Josh Ouellette"]
 source_name: Name of Publication
 source_url: https://www..com
 date: {{ .Date }}

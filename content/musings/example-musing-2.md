@@ -1,6 +1,6 @@
 ---
 title: "Example Musing 2"
-author: Josh Ouellette
+authors: ["Josh Ouellette"]
 date: 2018-10-15T12:24:08-07:00
 lastmod: 2018-10-15T12:24:08-07:00
 featured_image: /musings/images/pic-default.jpg

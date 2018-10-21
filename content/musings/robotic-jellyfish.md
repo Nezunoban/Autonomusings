@@ -1,6 +1,6 @@
 ---
 title: "Robotic Jellyfish"
-author: Author Name
+authors: ["Josh Ouellette"]
 date: 2018-10-13T14:51:16-07:00
 lastmod: 2018-10-13T14:51:16-07:00
 featured_image: /musings/images/pic-default.jpg

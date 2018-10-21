@@ -1,6 +1,6 @@
 ---
 title: "Robo Jellyfish Can Safely Explore Ocean Reefs"
-author: Josh Ouellette
+authors: ["Josh Ouellette"]
 source_name: Name of Publication
 source_url: https://www..com
 date: 2018-10-13T15:16:15-07:00

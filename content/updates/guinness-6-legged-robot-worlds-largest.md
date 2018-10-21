@@ -1,6 +1,6 @@
 ---
 title: "Guinness: Six-Legged Robot is World's Largest"
-author: Josh Ouellette
+authors: ["Josh Ouellette"]
 source_name: www.upi.com
 source_url: https://www.upi.com/Guinness-dubs-six-legged-walking-robot-the-worlds-largest/7151537206326/
 date: 2018-10-18T12:08:52-07:00

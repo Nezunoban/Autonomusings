@@ -261,3 +261,55 @@ a {
 		background-color: $light;
 	}
 }
+
+/* AUTHOR BIOs */
+.author-bio, .author-bio--partial {
+	display: flex;
+}
+.author-bio {
+	margin-top: 3rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid $light;
+}
+.author-bio--partial {
+	margin-top: 3rem;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	border-bottom: 1px solid $light;
+	border-top: 1px solid $light;
+	color: $mid;
+}
+
+
+.author-bio__text {
+	font-family: $secondary-font-family;
+}
+.author-bio__by {
+	display: block;
+	//font-family: $secondary-font-family;
+}
+.author-bio__name {
+	font-size: 1.5rem;
+}
+
+.author-bio .author-bio__name {
+	font-size: 2rem;
+	color: $dark;
+	font-weight: 700;
+}
+
+
+.author-bio__description {
+	margin-top: .5rem;
+	font-family: $body-font-family;
+}
+.author-bio__img {
+	margin-right: 2rem;
+}
+
+
+.meta-author {
+	font-family: $secondary-font-family;
+	font-size: 1rem;
+	//color: 
+}

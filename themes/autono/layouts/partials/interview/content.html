@@ -38,6 +38,18 @@
     </div>
 
     {{ partial "interview/post-meta.html" . }}
+
+    {{ with .Params.authors }}
+    {{ range $ind,$val := . }}
+      {{$author := $val | urlize }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+      <div class="meta-author">
+        <span class="meta-author__by">by </span><a class="meta-author-__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
+      </div>
+        {{ end -}}
+      {{ end }}
+    {{ end }}
+
   </header>
 
   {{ $tableOfContents := .TableOfContents }}
@@ -58,6 +70,7 @@
       {{ end }}
     {{ .Content }}
   </div>
+  {{ partial "page-single/authorbio.html" . }}
   {{ partial "page-single/post-navigation.html" . }}
   {{ partial "page-single/post-related.html" . }}
   {{ partial "page-single/post-comment.html" . }}
