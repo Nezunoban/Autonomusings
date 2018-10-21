@@ -93,6 +93,10 @@ footer {
   margin-top: .25rem;
 }
 
+.post {
+  margin-top: 2rem;
+}
+
 .page-title,
 .post-title,
 .post-title a {

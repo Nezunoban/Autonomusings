@@ -11,6 +11,9 @@
     margin-top: .25rem;
   }
 }
+.post {
+  margin-top: 2rem;
+}
 
 // Blog post or page title
 .page-title,
@@ -20,7 +23,7 @@
 }
 .page-title,
 .post-title {
-  margin-top: 0;
+  margin: .5rem 0;
 }
 
 // Meta data line below post title
@@ -63,5 +66,15 @@
         color: inherit;
       }
     }
+  }
+}
+
+.interview__subject-info {
+  .autonotalks, 
+  .autonotalks-presents {
+    font-size: 1rem;
+  }
+  .autonotalks {
+    font-weight: 600;
   }
 }

@@ -34,6 +34,11 @@ summaryLength = 20
     
     # Table of contents
     #toc = none, "hugo", or "tocbot"
+    
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
 
 ## Social Accounts
 [params.social]

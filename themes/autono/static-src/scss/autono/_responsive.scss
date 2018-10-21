@@ -4,7 +4,7 @@
 .hidden {
   visibility: hidden;
 }
-@media (min-width: 20px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   html,
   body {
     font-size: $small-device-font-size;
@@ -69,6 +69,8 @@
     display: block;
   }
 
+
+  /*  MENU  (20-768) */
   
   .menu-content {
     padding: 0 0 0 0px;
@@ -140,7 +142,7 @@
   }
 
 
-  /*  TABS  */
+  /*  TABS  (20-768) */
 
   .tabs .switch {
     display: none;
@@ -236,6 +238,31 @@
     }
   }
 
+    /* Interview Pages (768 +) */
+
+  .interview__subject {
+    display: flex;
+    justify-content: space-between;
+  }
+  .interview__subject-img {
+    width: 30%;
+  }
+
+  .interviews .featured_image {
+    display: none;  
+  }
+  .interviews .interview__subject {
+    padding-top: 1rem;
+  }
+
+  h1, .section__title {
+    font-size: 1.5rem;
+  }
+  .interview__subject-info .autonotalks, 
+  .interview__subject-info .autonotalks-presents {
+    font-size: .7rem;
+  }
+
 }
 
 // tablet/medium device ~768px+
@@ -310,7 +337,7 @@
     display: none;
   }
 
-/*  TABS  */
+/*  TABS  (768 +) */
 
   .tabs .switch {
     display: none;
@@ -320,6 +347,19 @@
   }
   #updates-switch-panel {
     display: none;
+  }
+
+
+  /* Interview Pages (768 +) */
+
+  .interview__subject {
+    display: flex;
+    justify-content: space-between;
+  }
+  .interview__subject-img {
+    width: 30%;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
   }
 
 }

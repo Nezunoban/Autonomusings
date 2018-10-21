@@ -64,8 +64,15 @@
     margin-left: -.5em;
     font-weight: 300;
 }
-
-.subject_organization {
+.subject__title {
 	font-family: $secondary-font-family;
-	font-weight: 500;
+}
+.subject__organization {
+	font-family: $secondary-font-family;
+	font-weight: 600;
+}
+.subject__seperator {
+	font-family: $secondary-font-family;
+	margin-left: .5em;
+	margin-right: .5em;
 }
