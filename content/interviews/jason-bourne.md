@@ -1,7 +1,7 @@
 ---
 title: "Jason Bourne"
-subject_name: Jason Bourne
-subject_title: Title
+subject_name: Jason F. Bourne
+subject_title: CEO
 subject_organization: Organizations
 subject_image: /interviews/images/people/pic-default.png
 authors: ["Josh Ouellette"]
@@ -9,7 +9,7 @@ date: 2018-10-01T15:15:00-07:00
 lastmod: 2018-10-01T15:15:00-07:00
 featured_image: /interviews/images/pic-default.jpg
 categories : [ "AutonoTalks" ]
-tags : [ "dev", "hugo", "autono"]
+tags : [ "automation", "machine learning", "ai"]
 layout: interview
 type:  "interview"
 highlight: false
@@ -28,9 +28,9 @@ executive_point3 : The matter at hand
 
 {{< soundcloud 412671942 >}}
 
-**Insert Lead paragraph here.**
+TT**Insert Lead paragraph here.**
 
-**Lacus auctor efficitur tempor placerat, dictum** volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin. Curae cursus inceptos tincidunt magna mi nibh ad enim etiam, molestie eu quis primis hendrerit taciti phasellus. Feugiat ultricies dictumst iaculis potenti odio laoreet urna at, ultrices curae leo accumsan proin sem lobortis.
+**Lacus auctor efficitur tempor placerat, dictum volutpat** mi lvitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin. Curae cursus inceptos tincidunt magna mi nibh ad enim etiam, molestie eu quis primis hendrerit taciti phasellus. Feugiat ultricies dictumst iaculis potenti odio laoreet urna at, ultrices curae leo accumsan proin sem lobortis.
 
 ## Heading 2
 

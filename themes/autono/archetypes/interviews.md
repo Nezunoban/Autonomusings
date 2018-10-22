@@ -10,7 +10,7 @@ lastmod: {{ .Date }}
 featured_image: /interviews/images/pic-default.jpg
 ## Categories: Must be set to "AutonoTalks" for proper formatting for interview in front page list
 categories : [ "AutonoTalks" ]
-tags : [ "dev", "hugo", "autono"]
+tags : [ "automation", "machine learning", "ai"]
 layout: interview
 type:  "interview"
 highlight: false

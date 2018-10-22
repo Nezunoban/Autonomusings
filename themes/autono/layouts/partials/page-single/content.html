@@ -54,8 +54,13 @@
     {{ end }}
     {{ .Content }}
   </div>
+
+  {{ if (isset .Params "source_url") }}
+  <h3 class="sources__title">Sources:</h3>
+  <div class="sources font-secondary">
+    <a  {{ with .Params.source_url }} href="{{ . }}"{{ end }} class="source_url" target="_blank">{{ with .Params.source_name }}{{ . }}{{ end }}  <i class="fas fa-arrow-right"></i></a>
+  </div>
+  {{ end }}
   {{ partial "page-single/authorbio.html" . }}
-  {{ partial "page-single/post-navigation.html" . }}
-  {{ partial "page-single/post-related.html" . }}
   {{ partial "page-single/post-comment.html" . }}
 </article>

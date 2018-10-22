@@ -7,7 +7,7 @@ featured_image: /musings/images/pic-default.jpg
 ## Every Musing needs 1 category
 categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]
-layout: post
+layout: musing
 type:  "musings"
 highlight: false
 draft: false
@@ -23,7 +23,7 @@ executive_point2 : Of course we also touch on the importance of the matter at ha
 executive_point3 : The matter at hand
 ---
 
-**Insert Lead paragraph here.**
+TT**Insert Lead paragraph here.**
 
 A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin. Curae cursus inceptos tincidunt magna mi nibh ad enim etiam, molestie eu quis primis hendrerit taciti phasellus. Feugiat ultricies dictumst iaculis potenti odio laoreet urna at, ultrices curae leo accumsan proin sem lobortis.
 

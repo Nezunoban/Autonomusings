@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
-tags : [ "dev", "hugo", "hyde-hyde"]
+tags : [ "manufacturing", "efficiency", "automation"]
 categories : [ "dev" ]
 layout: post
 type:  "post"

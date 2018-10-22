@@ -153,71 +153,19 @@ a {
 	}
 }
 
-@media (min-width: 1100px) {
-	.content {
-		padding-bottom: 2rem;
-		padding-top: 2rem;
-	}
-
-	.front-item__wrap {
-		margin-left: 16rem;
-		clear: none;
-		background-color: white;
-		padding: 0 4rem;
-		position: relative;
-		font-size: .8rem;
-		line-height: 1.8em;
-		.item__title--big {
-			font-size: 1.5rem;
-		}
-	}
-
-	.profile-image {
-		margin: 0 auto 1rem;
-	}
-
-	.interview__subject-image {    
-		position: absolute;
-		width: 16rem;
-	}
-
-	.interview__subject-image,
-	.featured-image {    
-		position: absolute;
-		max-width: 16rem
-	}
-
-
+.font-secondary {
+	font-family: $secondary-font-family;
 }
 
-@media (min-width: 1300px) {
-	.post-list__item:nth-child(1) {
-		height: 30rem;
-	}
-	.post-list__item:nth-child(1) .front-item__wrap{
-		position: absolute;
-		bottom: 0;
-		padding: 1.5rem 4rem;
-		font-size: 1rem;
-		.item__title--big {
-			font-size: 1.785rem;
-		}
-	}
-	.post-list__item:nth-child(1) .featured-image {
-		max-width: 45rem;
-		width: 45rem;
-	}
-
+.list-style--none {
+	list-style: none;
+    padding-left: 0;
+}
+ul.posts.list-style--none {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-@media (min-width: 1660px) {
-	.sidebar-2 {
-		position: absolute;
-		right: 5rem;
-		top: 7rem;
-		max-width: 20rem;
-	}
-}
 
 .post-list-item__body {
     margin-top: .5rem;
@@ -227,6 +175,7 @@ a {
 .sidebar-2 {
 	display: block;
 	background-color: $body-bg;
+    margin-bottom: 4rem;
 }
 .sidebar-2 .section-title.upper {
     padding-bottom: .75rem;
@@ -236,6 +185,7 @@ a {
 
 .sidebar__updates {
     padding-left: 0;
+    margin-bottom: 1rem;
 }
 
 .sidebar__updates .item__date,
@@ -275,7 +225,6 @@ a {
 	margin-top: 3rem;
 	padding-bottom: 2rem;
 	padding-top: 2rem;
-	border-bottom: 1px solid $light;
 	border-top: 1px solid $light;
 	color: $mid;
 }
@@ -311,5 +260,26 @@ a {
 .meta-author {
 	font-family: $secondary-font-family;
 	font-size: 1rem;
+	margin-top: 1rem;
 	//color: 
+}
+
+
+.related__list {
+	list-style: none;
+	padding: 0;
+}
+.related-content {
+	//margin-top: 3rem;
+	margin-bottom: 4rem;
+	h3 {
+		color: $light;
+		margin-bottom: 0;
+		//border-bottom: 1px solid $lighter;
+		padding-bottom: .5rem;
+	}
+}
+
+.see-all {
+	font-family: $secondary-font-family;
 }

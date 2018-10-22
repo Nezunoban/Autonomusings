@@ -1,6 +1,7 @@
+<!-- Special thanks to https://alligator.io/css/collapsible/ -->
 <div class="wrap-collapsible">
   <input id="collapsible" class="toggle" type="checkbox">
-  <label for="collapsible" class="lbl-toggle">Executive Summary</label>
+  <label for="collapsible" class="lbl-toggle" tabindex="0">Executive Summary</label>
   <div class="collapsible-content">
     <div class="content-inner">
       {{ if (isset .Params "executive_intro") }}<p><span class="executive_intro">{{ .Params.executive_intro }}</span></p> {{ end }}

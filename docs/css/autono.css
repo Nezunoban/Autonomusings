@@ -71,11 +71,8 @@ tbody tr:nth-child(odd) th {
 }
 
 .container {
-  max-width: 38rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 footer {
@@ -686,63 +683,18 @@ a.read-more-symbol {
   text-decoration: none;
 }
 
-@media (min-width: 1100px) {
-  .content {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-  }
-  .front-item__wrap {
-    margin-left: 16rem;
-    clear: none;
-    background-color: white;
-    padding: 0 4rem;
-    position: relative;
-    font-size: .8rem;
-    line-height: 1.8em;
-  }
-  .front-item__wrap .item__title--big {
-    font-size: 1.5rem;
-  }
-  .profile-image {
-    margin: 0 auto 1rem;
-  }
-  .interview__subject-image {
-    position: absolute;
-    width: 16rem;
-  }
-  .interview__subject-image,
-  .featured-image {
-    position: absolute;
-    max-width: 16rem;
-  }
+.font-secondary {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-@media (min-width: 1300px) {
-  .post-list__item:nth-child(1) {
-    height: 30rem;
-  }
-  .post-list__item:nth-child(1) .front-item__wrap {
-    position: absolute;
-    bottom: 0;
-    padding: 1.5rem 4rem;
-    font-size: 1rem;
-  }
-  .post-list__item:nth-child(1) .front-item__wrap .item__title--big {
-    font-size: 1.785rem;
-  }
-  .post-list__item:nth-child(1) .featured-image {
-    max-width: 45rem;
-    width: 45rem;
-  }
+.list-style--none {
+  list-style: none;
+  padding-left: 0;
 }
 
-@media (min-width: 1660px) {
-  .sidebar-2 {
-    position: absolute;
-    right: 5rem;
-    top: 7rem;
-    max-width: 20rem;
-  }
+ul.posts.list-style--none {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .post-list-item__body {
@@ -753,6 +705,7 @@ a.read-more-symbol {
 .sidebar-2 {
   display: block;
   background-color: #fff;
+  margin-bottom: 4rem;
 }
 
 .sidebar-2 .section-title.upper {
@@ -761,6 +714,7 @@ a.read-more-symbol {
 
 .sidebar__updates {
   padding-left: 0;
+  margin-bottom: 1rem;
 }
 
 .sidebar__updates .item__date,
@@ -808,7 +762,6 @@ a.read-more-symbol {
   margin-top: 3rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
-  border-bottom: 1px solid #a4a4ad;
   border-top: 1px solid #a4a4ad;
   color: #747481;
 }
@@ -845,6 +798,25 @@ a.read-more-symbol {
   font-size: 1rem;
 }
 
+.related__list {
+  list-style: none;
+  padding: 0;
+}
+
+.related-content {
+  margin-bottom: 4rem;
+}
+
+.related-content h3 {
+  color: #a4a4ad;
+  margin-bottom: 0;
+  padding-bottom: .5rem;
+}
+
+.see-all {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .sidebar {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #353e4a;
@@ -860,6 +832,7 @@ a.read-more-symbol {
 
 .sidebar a:hover {
   color: #933f8f;
+  background-color: #fafafa;
 }
 
 .sidebar a:focus {
@@ -1539,6 +1512,11 @@ a.badge-tag:focus {
     overflow: hidden;
     margin-bottom: 1rem;
   }
+  .list-page.post-list__item .interview__subject-image {
+    float: left;
+    max-width: 5rem;
+    margin-right: 1rem;
+  }
   /*  TABS  (20-768) */
   .tabs .switch {
     display: none;
@@ -1641,12 +1619,36 @@ a.badge-tag:focus {
   .interview__subject-info .autonotalks-presents {
     font-size: .7rem;
   }
+  .related__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .related__subject-image {
+    max-width: 5rem;
+    margin-right: .5rem;
+    padding: .5rem;
+  }
 }
 
 @media (min-width: 768px) {
   html,
   body {
     font-size: 15px;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .site__nav,
+  .sidebar {
+    width: 33.33%;
+    max-width: 22rem;
+  }
+  .site__main {
+    width: 66.67%;
   }
   .tablist-front {
     display: none;
@@ -1669,7 +1671,6 @@ a.badge-tag:focus {
     top: 1rem;
   }
   .content {
-    margin-left: 20rem;
     margin-right: 2rem;
     max-width: 38rem;
   }
@@ -1679,7 +1680,6 @@ a.badge-tag:focus {
   }
   .layout-reverse .content {
     margin-left: 2rem;
-    margin-right: 20rem;
   }
   .col-sm-8 {
     width: 66.66666667%;
@@ -1737,17 +1737,48 @@ a.badge-tag:focus {
     width: auto;
     max-width: none;
   }
+  .related__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .related__item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .related__subject-image {
+    max-width: 8rem;
+    margin-right: 0 auto;
+    padding: .5rem;
+    display: block;
+    max-width: 8rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .site__nav,
+  .sidebar {
+    width: 33.33%;
+  }
+  .site__main {
+    width: 66.67%;
+  }
+  .hidden-mid {
+    display: none;
+  }
   .content {
-    margin-left: 26rem;
     margin-right: 2rem;
     max-width: 48rem;
   }
+  body.page-autonomusings .content, body.page-musings .content, body.categories .content, body.tags .content, body.page-interviews .content, body.page-updates .content {
+    margin-left: 7rem;
+  }
   .layout-reverse .content {
     margin-left: 4rem;
-    margin-right: 22rem;
   }
   .col-md-4 {
     float: left;
@@ -1764,15 +1795,23 @@ a.badge-tag:focus {
     text-align: center;
     max-width: 80%;
   }
-  .sidebar-2__container {
-    padding: 0rem 3rem;
-  }
   span.featured-time {
     display: none;
+  }
+  .related__item {
+    width: 33%;
+    margin-right: 2rem;
   }
 }
 
 @media (min-width: 1024px) {
+  .site__nav,
+  .sidebar {
+    width: 25%;
+  }
+  .site__main {
+    width: 75;
+  }
   /*
   html,
   body {
@@ -1781,6 +1820,93 @@ a.badge-tag:focus {
   */
   span.featured-time {
     display: inline-block;
+  }
+}
+
+@media (min-width: 1100px) {
+  .content {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .front-item__wrap {
+    margin-left: 16rem;
+    clear: none;
+    background-color: white;
+    padding: 0 4rem;
+    position: relative;
+    font-size: .8rem;
+    line-height: 1.8em;
+  }
+  .front-item__wrap .item__title--big {
+    font-size: 1.5rem;
+  }
+  .profile-image {
+    margin: 0 auto 1rem;
+  }
+  .interview__subject-image {
+    position: absolute;
+    width: 16rem;
+  }
+  .interview__subject-image,
+  .featured-image {
+    position: absolute;
+    max-width: 16rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .site__nav,
+  .sidebar {
+    width: 20%;
+  }
+  .site__main {
+    width: 80%;
+  }
+  .sidebar-2__container {
+    padding: 0rem 3rem;
+  }
+  .related__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33%;
+    margin-right: 2rem;
+  }
+  .related__subject-image {
+    max-width: 5rem;
+    margin-right: .5rem;
+    padding: .5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-autonomusings .post-list__item:nth-child(1) {
+    height: 30rem;
+  }
+  .page-autonomusings .post-list__item:nth-child(1) .front-item__wrap {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 4rem;
+    font-size: 1rem;
+  }
+  .page-autonomusings .post-list__item:nth-child(1) .front-item__wrap .item__title--big {
+    font-size: 1.785rem;
+  }
+  .page-autonomusings .post-list__item:nth-child(1) .featured-image {
+    max-width: 45rem;
+    width: 45rem;
+  }
+  .sidebar-2 {
+    position: absolute;
+    right: 1rem;
+    top: 7rem;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1480px) {
+  .sidebar-2 {
+    right: 5rem;
   }
 }
 

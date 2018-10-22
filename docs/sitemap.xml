@@ -28,13 +28,34 @@
   </url>
   
   <url>
+    <loc>https://github.com/Nezunoban/autonomusings/interviews/jack-ryan/</loc>
+    <lastmod>2018-10-01T15:15:00-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://github.com/Nezunoban/autonomusings/interviews/jason-bourne/</loc>
+    <lastmod>2018-10-01T15:15:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/Nezunoban/autonomusings/interviews/tessa-mctestersson/</loc>
+    <lastmod>2018-10-01T15:15:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/Nezunoban/autonomusings/interviews/test-mctestersson/</loc>
     <lastmod>2018-10-01T15:15:00-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://github.com/Nezunoban/autonomusings/authors/josh-ouellette/</loc>
     <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.com/Nezunoban/autonomusings/tags/ai/</loc>
+    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -45,18 +66,12 @@
   
   <url>
     <loc>https://github.com/Nezunoban/autonomusings/tags/automation/</loc>
-    <lastmod>2018-10-16T12:24:08-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/Nezunoban/autonomusings/categories/automation/</loc>
     <lastmod>2018-10-18T12:08:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://github.com/Nezunoban/autonomusings/tags/autono/</loc>
+    <loc>https://github.com/Nezunoban/autonomusings/categories/automation/</loc>
     <lastmod>2018-10-18T12:08:52-07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -80,26 +95,26 @@
   </url>
   
   <url>
-    <loc>https://github.com/Nezunoban/autonomusings/tags/dev/</loc>
-    <lastmod>2018-10-13T15:16:15-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/Nezunoban/autonomusings/tags/efficiency/</loc>
     <lastmod>2018-10-16T12:24:08-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://github.com/Nezunoban/autonomusings/tags/hugo/</loc>
-    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+    <loc>https://github.com/Nezunoban/autonomusings/tags/exploration/</loc>
+    <lastmod>2018-10-13T15:16:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://github.com/Nezunoban/autonomusings/interviews/</loc>
     <lastmod>2018-10-01T15:15:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/Nezunoban/autonomusings/tags/machine-learning/</loc>
+    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -116,20 +131,26 @@
   </url>
   
   <url>
-    <loc>https://github.com/Nezunoban/autonomusings/tags/robotics/</loc>
-    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+    <loc>https://github.com/Nezunoban/autonomusings/tags/safety/</loc>
+    <lastmod>2018-10-13T15:16:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://github.com/Nezunoban/autonomusings/tags/</loc>
-    <lastmod>2018-10-16T12:24:08-07:00</lastmod>
+    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://github.com/Nezunoban/autonomusings/updates/</loc>
     <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/Nezunoban/autonomusings/tags/vehicles/</loc>
+    <lastmod>2018-10-13T15:16:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   

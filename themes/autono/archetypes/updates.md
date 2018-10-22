@@ -7,7 +7,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 featured_image: /updates/images/pic-default.jpg
 categories : [ "automation" ]
-tags : [ "robotics", "hugo", "autono"]
+tags : [ "manufacturing", "efficiency", "automation"]
 layout: update
 type:  "update"
 highlight: false

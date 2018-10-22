@@ -6,7 +6,7 @@ source_url: https://www..com
 date: 2018-10-13T15:16:15-07:00
 lastmod: 2018-10-13T15:16:15-07:00
 featured_image: /updates/images/pic-default.jpg
-tags : [ "dev", "hugo", "autono"]
+tags : [ "exploration", "vehicles", "safety"]
 categories : [ "vehicles" ]
 layout: update
 type:  "update"
@@ -16,7 +16,7 @@ summarylength : 20
 ---
 
 ### What Happened:
-At quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.
+TT**At quisque litora ullamcorper maecenas ultricies ut** dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.
 
 ### Why It Matters:
 At quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.

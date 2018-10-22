@@ -1,0 +1,7 @@
+<!-- Deprecated -->
+
+{{ if eq "Section" (slice "musings" "interviews" "updates") }}
+    <div class="content-secondary-inner">
+        {{ partial "page-single/post-related.html" . }}
+    </div>  
+{{ end }}
