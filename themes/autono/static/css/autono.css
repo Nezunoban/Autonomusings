@@ -942,8 +942,6 @@ ul.posts.list-style--none {
   position: relative;
   border-bottom: 1px solid #ddd;
   padding-bottom: 2.5rem;
-  padding-left: 7rem;
-  margin-left: -7rem;
 }
 
 .item__title--big {
@@ -1861,6 +1859,10 @@ a.badge-tag:focus {
 }
 
 @media (min-width: 1024px) {
+  .post-list__item {
+    padding-left: 7rem;
+    margin-left: -7rem;
+  }
   .site__nav,
   .sidebar {
     width: 25%;

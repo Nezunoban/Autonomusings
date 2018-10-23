@@ -520,6 +520,11 @@
 // 1024px ~  64rem/16px ~ 60.2353rem/17px 56.8889rem/18px
 @media (min-width: 1024px) {
 
+
+  .post-list__item {
+    padding-left: 7rem;
+    margin-left: -7rem;
+  }
   .site__nav, 
   .sidebar {
     width: 25%;
