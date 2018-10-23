@@ -161,6 +161,18 @@ a {
 	list-style: none;
     padding-left: 0;
 }
+
+.copyright {
+	margin: 3rem 0 2rem;
+	font-size: $copyright-font-size;
+	line-height: $root-line-height;
+	color: $mid;
+	a {
+	  color: $dark;
+	}
+}
+
+
 ul.posts.list-style--none {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -169,7 +181,8 @@ ul.posts.list-style--none {
 
 .post-list-item__body {
     margin-top: .5rem;
-    line-height: 1.667em;
+	line-height: 1.667em;
+	margin-bottom: 1rem;
 }
 
 .sidebar-2 {
@@ -283,3 +296,5 @@ ul.posts.list-style--none {
 .see-all {
 	font-family: $secondary-font-family;
 }
+
+

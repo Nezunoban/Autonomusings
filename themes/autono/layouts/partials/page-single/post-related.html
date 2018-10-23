@@ -5,19 +5,12 @@
   <ul class="related__list">
     {{ range . }}
     <li class="related__item">
-		
-			{{ if (isset .Params "subject_image") }}
-			<span class="related__subject-image">
-					<a href="{{ .RelPermalink }}">
-							<img class="profile-image img--circle" {{ with .Params.subject_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
-					</a>
-			</span>
-			{{ end }}
+
 
 			<div class="related-item__container">
 				{{ if eq "Type" "update" }} 
 				<span class="item__title--large">
-					<a href="#" data-micromodal-trigger="modal-{{ .UniqueID }}">{{ .Title }}</a>
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 							</span>
 				{{ end }}
 				<span class="item__categories">

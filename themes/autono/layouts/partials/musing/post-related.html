@@ -1,15 +1,16 @@
 {{ $related := .Site.RegularPages.Related . | first 3 }}
 {{ with $related }}
 <div class="related-content">
-  <h3>Related to these thoughts</h3>
+  <h3>Related to These Thoughts</h3>
   <ul class="related__list">
     {{ range . }}
     <li class="related__item">
 
+
 			<div class="related-item__container">
 				{{ if eq "Type" "update" }} 
 				<span class="item__title--large">
-					<a href="#" data-micromodal-trigger="modal-{{ .UniqueID }}">{{ .Title }}</a>
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 							</span>
 				{{ end }}
 				<span class="item__categories">

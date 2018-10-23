@@ -11,6 +11,8 @@
 <h2>Articles</h2>
 <ul>
 {{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+	{{ if ne .Params.Type "update"}}
+	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+	{{ end }}
 {{ end }}
 </ul>

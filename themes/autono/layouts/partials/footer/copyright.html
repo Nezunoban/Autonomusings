@@ -1,6 +1,6 @@
-<div class="copyright">
+<div class="copyright font-secondary">
   {{ with .Site.Params.copyright }}{{.|safeHTML}}{{ else }}&copy; {{ now.Format "2006"}} {{.Site.Params.author}}.
   <a href="https://creativecommons.org/licenses/by-sa/4.0">All Rights Reserved</a>.
+  {{end}}<span class="privacy-policy">&nbsp; | &nbsp; <a class="privacy-link" href="/privacy-policy">Privacy Policy</a></span>
   <!--Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/nezunoban/autono">autono</a>.-->
-  {{end}}
 </div>

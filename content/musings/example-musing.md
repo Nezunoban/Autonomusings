@@ -18,8 +18,6 @@ executive_summary: true
 executive_intro : 'In this particular musing, we discuss the matter at hand, including:'
 ## Bullet Point summary - Up to 5 points allowed 
 executive_point1 : The matter at hand
-executive_point2 : Of course we also touch on the importance of the matter at hand, for educational purposes, including long points
-executive_point3 : The matter at hand
 ---
 
 Insert Lead paragraph here.**

@@ -5,8 +5,8 @@ subject_title: Title
 subject_organization: Organizations
 subject_image: /interviews/images/people/pic-default.png
 authors: ["Josh Ouellette"]
-date: 2018-10-01T15:15:00-07:00
-lastmod: 2018-10-01T15:15:00-07:00
+date: 2018-10-14T15:15:00-07:00
+lastmod: 2018-10-14T15:15:00-07:00
 featured_image: /interviews/images/pic-default.jpg
 categories : [ "AutonoTalks" ]
 tags : [ "automation", "machine learning", "ai"]
@@ -26,7 +26,7 @@ executive_point2 : Of course we also touch on the importance of the matter at ha
 executive_point3 : The matter at hand
 ---
 
-{{< soundcloud 412671942 >}}
+##{{< soundcloud 412671942 >}}
 
 **Insert Lead paragraph here.**
 

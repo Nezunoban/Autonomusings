@@ -6,10 +6,19 @@
     <description>Recent content on Autonomusings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Oct 2018 12:08:52 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 23 Oct 2018 11:43:09 -0700</lastBuildDate>
     
 	<atom:link href="https://github.com/Nezunoban/autonomusings/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://github.com/Nezunoban/autonomusings/about/privacy-policy/</link>
+      <pubDate>Tue, 23 Oct 2018 11:43:09 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/about/privacy-policy/</guid>
+      <description>This privacy notice discloses the privacy practices for www.autonomusings.com. This privacy notice applies solely to information collected by this website.</description>
+    </item>
     
     <item>
       <title>Guinness: Six-Legged Robot is World&#39;s Largest</title>
@@ -17,7 +26,7 @@
       <pubDate>Thu, 18 Oct 2018 12:08:52 -0700</pubDate>
       
       <guid>https://github.com/Nezunoban/autonomusings/updates/guinness-6-legged-robot-worlds-largest/</guid>
-      <description>What Happened: TTAt quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.</description>
+      <description>What Happened: At quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.</description>
     </item>
     
     <item>
@@ -41,12 +50,23 @@ A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae vi
     </item>
     
     <item>
+      <title>Jack Ryan</title>
+      <link>https://github.com/Nezunoban/autonomusings/interviews/jack-ryan/</link>
+      <pubDate>Sun, 14 Oct 2018 15:15:00 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/interviews/jack-ryan/</guid>
+      <description>##
+Insert Lead paragraph here.
+Lacus auctor efficitur tempor placerat, dictum volutpat mi vitaeviverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
+    </item>
+    
+    <item>
       <title>Robo Jellyfish Can Safely Explore Ocean Reefs</title>
       <link>https://github.com/Nezunoban/autonomusings/updates/robo-jellyfish-can-safely-explore-ocean-reefs/</link>
       <pubDate>Sat, 13 Oct 2018 15:16:15 -0700</pubDate>
       
       <guid>https://github.com/Nezunoban/autonomusings/updates/robo-jellyfish-can-safely-explore-ocean-reefs/</guid>
-      <description>What Happened: TTAt quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.</description>
+      <description>What Happened: At quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.</description>
     </item>
     
     <item>
@@ -57,16 +77,6 @@ A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae vi
       <guid>https://github.com/Nezunoban/autonomusings/musings/robotic-jellyfish/</guid>
       <description>TTInsert Lead paragraph here.
 A augue nunc lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
-    </item>
-    
-    <item>
-      <title>Jack Ryan</title>
-      <link>https://github.com/Nezunoban/autonomusings/interviews/jack-ryan/</link>
-      <pubDate>Mon, 01 Oct 2018 15:15:00 -0700</pubDate>
-      
-      <guid>https://github.com/Nezunoban/autonomusings/interviews/jack-ryan/</guid>
-      <description>Insert Lead paragraph here.
-Lacus auctor efficitur tempor placerat, dictum volutpat mi vitaeviverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin.</description>
     </item>
     
     <item>

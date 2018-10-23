@@ -16,7 +16,7 @@ summarylength : 20
 ---
 
 ### What Happened:
-TT**At quisque litora ullamcorper maecenas ultricies ut** dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.
+**At quisque litora ullamcorper maecenas ultricies ut** dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.
 
 ### Why It Matters:
 At quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc.

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -506,6 +507,131 @@ footer {
   margin-top: 0;
 }
 
+/**************************\
+Subscription Block - Sidebar
+\**************************/
+#mc_embed_signup {
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+/* Signup form container */
+.mc-field-group {
+  display: inline-block;
+}
+
+/* positions input field horizontally */
+#mce-EMAIL {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  border: 2px solid #ABB0B2;
+  color: #343434;
+  background-color: #fff;
+  padding: .7em 9em .7em 1em;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Input Styles */
+.clear {
+  display: inline-block;
+}
+
+/* positions button horizontally in line with input */
+.button {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  letter-spacing: .03em;
+  color: #fff;
+  background-color: #2386C8;
+  padding: .7em 2em;
+  border: 2px solid #2386C8;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Button Styles */
+:-webkit-input-placeholder {
+  color: #ABB0B2;
+}
+
+/* WebKit browsers */
+:-moz-placeholder {
+  color:   #ABB0B2;
+}
+
+/* Mozilla Firefox 4 to 18 */
+::-moz-placeholder {
+  color: #ABB0B2;
+}
+
+/* Mozilla Firefox 19+ */
+:-ms-input-placeholder {
+  color: #ABB0B2;
+}
+
+/* Internet Explorer 10+ */
+@media (max-width: 768px) {
+  /* positions input field and button underneath each other with 100% width for tablet and mobile */
+  .mc-field-group {
+    display: block;
+    max-width: 100%;
+  }
+  #mce-EMAIL {
+    padding: .7em 0 .7em 1em;
+    width: 96%;
+    margin: 0;
+  }
+  .clear {
+    display: block;
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    margin: .5em 0 0 0;
+  }
+}
+
+/**************************\
+Subscription Block - Sidebar
+\**************************/
+.sidebar__subscribe {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #a4a4ad;
+  border-bottom: 1px solid #a4a4ad;
+}
+
+.sidebar__subscribe .subscribe__title {
+  margin-bottom: .5rem;
+}
+
+.sidebar__subscribe .mc-field-group {
+  display: block;
+  max-width: 100%;
+}
+
+.sidebar__subscribe #mce-EMAIL {
+  padding: .7em 0 .7em 1em;
+  width: 96%;
+  margin: 0;
+}
+
+.sidebar__subscribe .clear {
+  display: block;
+  width: 100%;
+}
+
+.sidebar__subscribe .button {
+  width: 100%;
+  margin: .5em 0 0 0;
+  cursor: pointer;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -692,6 +818,17 @@ a.read-more-symbol {
   padding-left: 0;
 }
 
+.copyright {
+  margin: 3rem 0 2rem;
+  font-size: 0.7rem;
+  line-height: 1.667em;
+  color: #747481;
+}
+
+.copyright a {
+  color: #30363c;
+}
+
 ul.posts.list-style--none {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -700,6 +837,7 @@ ul.posts.list-style--none {
 .post-list-item__body {
   margin-top: .5rem;
   line-height: 1.667em;
+  margin-bottom: 1rem;
 }
 
 .sidebar-2 {
@@ -796,6 +934,7 @@ ul.posts.list-style--none {
 .meta-author {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .related__list {
@@ -926,12 +1065,6 @@ ul.posts.list-style--none {
   font-style: italic;
 }
 
-.copyright {
-  text-align: center;
-  font-size: 0.7rem;
-  line-height: 1.667em;
-}
-
 .section__title {
   font-size: 2.15rem;
 }
@@ -941,8 +1074,6 @@ ul.posts.list-style--none {
   position: relative;
   border-bottom: 1px solid #ddd;
   padding-bottom: 2.5rem;
-  padding-left: 7rem;
-  margin-left: -7rem;
 }
 
 .item__title--big {
@@ -1052,6 +1183,32 @@ ul.posts.list-style--none {
 .article--featured {
   position: relative;
   background: white;
+}
+
+@media (min-width: 768px) {
+  .article--featured {
+    margin: 7rem 0rem 0rem 2rem;
+    padding: 2.5rem 2rem;
+  }
+  .featured__wrap--fixed {
+    position: absolute;
+    width: 80%;
+  }
+  .featured__container {
+    position: relative;
+    top: 0;
+    height: 20em;
+    display: block;
+    overflow: hidden;
+    margin-top: -10em;
+  }
+  .featured_image {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+    margin: 0;
+    position: absolute;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1396,6 +1553,40 @@ a.badge-tag:focus {
   visibility: hidden;
 }
 
+.related-content h3 {
+  margin-bottom: 0;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.related-content {
+  margin-bottom: 2rem;
+  padding-bottom: 0rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.related__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.related__subject-image {
+  max-width: 7rem;
+  margin-left: 1rem;
+  padding: .5rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.related__item .item__title--big {
+  font-size: 1.5rem;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   html,
   body {
@@ -1431,9 +1622,6 @@ a.badge-tag:focus {
     display: block;
     height: 4.5rem;
     margin: 0;
-  }
-  .copyright {
-    display: none;
   }
   .sidebar {
     margin: 0;
@@ -1506,6 +1694,12 @@ a.badge-tag:focus {
   }
   .social {
     padding: 1em 0 1em 0;
+  }
+  .featured__wrap--fixed {
+    max-height: 12rem;
+  }
+  .article--featured {
+    padding-top: 1rem;
   }
   .post-list__item .featured-image {
     max-height: 10rem;
@@ -1593,7 +1787,7 @@ a.badge-tag:focus {
   .page-updates .sidebar-2__container {
     display: none;
   }
-  /* Interview Pages (768 +) */
+  /* Interview Pages (0 - 768 ) */
   .interview__subject {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1618,17 +1812,6 @@ a.badge-tag:focus {
   .interview__subject-info .autonotalks,
   .interview__subject-info .autonotalks-presents {
     font-size: .7rem;
-  }
-  .related__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 1.5rem;
-  }
-  .related__subject-image {
-    max-width: 5rem;
-    margin-right: .5rem;
-    padding: .5rem;
   }
 }
 
@@ -1723,39 +1906,20 @@ a.badge-tag:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .interview__subject-img {
-    width: 30%;
-    margin-top: -1rem;
-    margin-bottom: -1rem;
+    max-width: 6rem;
+    margin-right: 1rem;
+  }
+  .interview__subject-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .author-bio .author-bio__img .profile-image {
     height: 12rem;
     width: auto;
     max-width: none;
-  }
-  .related__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .related__item {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-  .related__subject-image {
-    max-width: 8rem;
-    margin-right: 0 auto;
-    padding: .5rem;
-    display: block;
-    max-width: 8rem;
   }
 }
 
@@ -1805,6 +1969,10 @@ a.badge-tag:focus {
 }
 
 @media (min-width: 1024px) {
+  .post-list__item {
+    padding-left: 7rem;
+    margin-left: -7rem;
+  }
   .site__nav,
   .sidebar {
     width: 25%;
@@ -1852,6 +2020,28 @@ a.badge-tag:focus {
     position: absolute;
     max-width: 16rem;
   }
+  .related__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .related__item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .related__subject-image {
+    max-width: 8rem;
+    padding: .5rem;
+    display: block;
+    max-width: 8rem;
+  }
+  .related__subject-image img {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1240px) {
@@ -1876,6 +2066,30 @@ a.badge-tag:focus {
     max-width: 5rem;
     margin-right: .5rem;
     padding: .5rem;
+  }
+  /* Interview Pages (1240 +) */
+  .interview__subject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .interview__subject-info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .interview__subject-img {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 30%;
+    max-width: 18rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    margin-right: 0;
   }
 }
 
