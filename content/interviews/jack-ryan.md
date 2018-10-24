@@ -26,7 +26,7 @@ executive_point2 : Of course we also touch on the importance of the matter at ha
 executive_point3 : The matter at hand
 ---
 
-##{{< soundcloud 412671942 >}}
+{{< soundcloud 412671942 >}}
 
 **Insert Lead paragraph here.**
 
@@ -34,6 +34,23 @@ executive_point3 : The matter at hand
 
 ## Heading 2
 
+**Question for you?**
+
+**Name:** Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+**Question for you?**
+
+**Name:** Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+**Question for you?**
+
+**Name:** Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+{{< mailchimp >}}
+
+**Question for you?**
+
+**Name:** Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
 **Question for you?**
 
 **Name:** Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.

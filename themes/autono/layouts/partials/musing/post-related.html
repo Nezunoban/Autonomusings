@@ -15,6 +15,9 @@
 				{{ end }}
 				<span class="item__categories">
 					<!-- categories -->
+					{{ if eq "Type" "interview" }} 
+					<i class="fas fa-microphone-alt"></i>
+					{{ end }}
 					{{ with .Params.categories }}
 						{{ $total := len . }}
 						{{ if gt $total 0 }}
@@ -22,6 +25,9 @@
 							{{ range $i, $cat := sort . }}
 								<a class="badge badge-category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
 								{{ if lt $i $total }}•{{ end }}
+								{{ if eq "Type" "interview" }} 
+									<i class="fas fa-microphone-alt"></i>
+								{{ end }}
 							{{ end }}
 						{{ end }}
 					{{ end }}
@@ -30,6 +36,9 @@
 				{{ if ne "Type" "update" }} 
 				<span class="item__title--big">
 					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					{{ if eq .Params.Type "interview" }} 
+						<i class="fas fa-microphone-alt"></i>
+					{{ end }}
 					{{ if .Draft }}<sup><i class="fas fa-comment-dots fa-xs"></i></sup>{{ end }}
 				</span>
 				{{ end }}

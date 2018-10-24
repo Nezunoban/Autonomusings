@@ -14,7 +14,9 @@
 							</span>
 				{{ end }}
 				<span class="item__categories">
+
 					<!-- categories -->
+					
 					{{ with .Params.categories }}
 						{{ $total := len . }}
 						{{ if gt $total 0 }}
@@ -30,6 +32,9 @@
 				{{ if ne "Type" "update" }} 
 				<span class="item__title--big">
 					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					{{ if eq .Params.Type "interview" }} 
+						<i class="fas fa-microphone-alt"></i>
+					{{ end }}
 					{{ if .Draft }}<sup><i class="fas fa-comment-dots fa-xs"></i></sup>{{ end }}
 				</span>
 				{{ end }}

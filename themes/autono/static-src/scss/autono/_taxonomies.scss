@@ -16,7 +16,7 @@ a.badge-category {
 .badge-tag,
 a.badge-tag {
   color: #fff !important;
-  background-color: $purple;
+  background-color: desaturate($purple, 10%);
   &:hover, &:focus {
     color: $purple !important;
     background: transparent;

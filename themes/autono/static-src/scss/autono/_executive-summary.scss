@@ -3,8 +3,8 @@
 
 .wrap-collapsible {
 	margin-bottom: 1.2rem 0;
-	border-bottom: 1px solid $gray-3;
-	border-top: 1px solid $gray-3;
+	border-bottom: 3px solid $gray-3;
+	//border-top: 1px solid $gray-3;
     margin-top: 2.5rem;
     margin-bottom: 3rem;
 	background: $gray-1;
@@ -75,5 +75,12 @@
 
 	p:nth-child(1) {
 		margin-top: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.wrap-collapsible {
+		margin-left: -2rem;
+		margin-right: -2rem;
 	}
 }
