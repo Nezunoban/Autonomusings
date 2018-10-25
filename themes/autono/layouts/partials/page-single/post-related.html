@@ -15,9 +15,6 @@
 				{{ end }}
 				<span class="item__categories">
 					<!-- categories -->
-					{{ if eq .Params.Type "interview" }} 
-						<i class="fas fa-microphone-alt"></i>
-					{{ end }}
 					{{ with .Params.categories }}
 						{{ $total := len . }}
 						{{ if gt $total 0 }}
@@ -34,7 +31,7 @@
 				<span class="item__title--big">
 					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 					{{ if eq .Params.Type "interview" }} 
-						<i class="fas fa-microphone-alt"></i>
+						<i class="fas fa-comments"></i>
 					{{ end }}
 					{{ if .Draft }}<sup><i class="fas fa-comment-dots fa-xs"></i></sup>{{ end }}
 				</span>

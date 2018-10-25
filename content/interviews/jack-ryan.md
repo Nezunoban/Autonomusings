@@ -30,7 +30,7 @@ executive_point3 : The matter at hand
 
 **Insert Lead paragraph here.**
 
-**Lacus auctor efficitur tempor placerat, dictum volutpat**  mi vitaeviverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin. Curae cursus inceptos tincidunt magna mi nibh ad enim etiam, molestie eu quis primis hendrerit taciti phasellus. Feugiat ultricies dictumst iaculis potenti odio laoreet urna at, ultrices curae leo accumsan proin sem lobortis.
+**Lacus auctor efficitur tempor placerat, dictum volutpat** mi vitaeviverra porta non sem, himenaeos senectus vivamus potenti cubilia sollicitudin. Curae cursus inceptos tincidunt magna mi nibh ad enim etiam, molestie eu quis primis hendrerit taciti phasellus. Feugiat ultricies dictumst iaculis potenti odio laoreet urna at, ultrices curae leo accumsan proin sem lobortis.
 
 ## Heading 2
 
@@ -41,6 +41,8 @@ executive_point3 : The matter at hand
 **Question for you?**
 
 **Name:** Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+>"Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien."
 
 **Question for you?**
 
@@ -54,3 +56,28 @@ executive_point3 : The matter at hand
 **Question for you?**
 
 **Name:** Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+>Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+{{% pullquote left %}} "Sollicitudin ornare odio blandit aenean enim lacus" {{% /pullquote %}}
+Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+> You don't need HTML:
+>
+> * a markdown
+> * list in quotes
+>
+> Even with numbers:
+>
+> 1. more
+> 2. less
+
+Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
+
+{{< figure src="/interviews/images/pic-default.jpg" caption="Jack on site at Renham Industries">}}
+
+Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.

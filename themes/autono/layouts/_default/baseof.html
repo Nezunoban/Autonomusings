@@ -7,6 +7,9 @@
 		</div>
 		<div class="site__main">
 			<div class="content container">
+				{{ if ne .Kind "home" }}
+					{{ partial "tab-links.html" . }}
+				{{ end }}
 				{{ block "content" . }}{{ end }}
 				{{ partial "micromodal-updates.html" . }}
 			</div>

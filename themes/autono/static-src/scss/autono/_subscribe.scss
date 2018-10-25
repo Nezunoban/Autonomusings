@@ -103,12 +103,13 @@ Subscription Block - Sidebar
   }
 }
 .article__subscribe {
+  margin: 2rem 0rem;
   padding: 1.5em;
   padding-bottom: 2rem;
   background-color: $gray-2;
   border-bottom: 3px solid $light;
+  border-radius: 3px;
 }
-
 
 
 
@@ -179,7 +180,7 @@ Subscription Block - Sidebar
       margin: 0 1rem 1rem 0rem;
       display: block;
       /* font-weight: 600; */
-      font-size: 1.667em;
+      font-size: 1.333em;
     }
     #mc_embed_signup_scroll {
       display: flex;

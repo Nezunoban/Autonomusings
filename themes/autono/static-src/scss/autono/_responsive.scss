@@ -35,6 +35,14 @@
   font-size: 1.5rem;
 }
 
+
+.tab-links .tab {
+  display: none;
+}
+.tabs .switch {
+  display: none;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   html,
   body {
@@ -96,6 +104,12 @@
     display: block;
   }
 
+  .sidebar-2 {
+    .section__title, .upper {
+      font-size: 1.25rem;
+    }
+  }
+
 
   /*  MENU  (20-768) */
   
@@ -121,6 +135,7 @@
     background: $gray-2;
     border-bottom: 3px solid $dark;
     border-right: 2px solid $light;
+    border-radius: 3px;
   }
   .collapsible-menu li {
     display: block;
@@ -152,6 +167,7 @@
     background-color: $gray-2;
     background-image: url(../img/menu-close-dark.svg); 
     border-right: 2px solid $light;
+    border-radius: 3px;
     //color: #fff;
   }
   
@@ -188,6 +204,56 @@
     }
   }
 
+
+  span.featured-time {
+    display: none;
+  }
+
+
+  /* Remove redundant Updates from mobile front page */
+  /* and update list */
+
+  .page-autonomusings,
+  .page-updates {
+    .sidebar-2__container {
+      .section-title.upper,
+      .sidebar__updates,
+      .see-all__wrapper {
+      display: none;
+      }
+    }
+  }
+
+    /* Interview Pages (0 - 768 ) */
+
+  .interview__subject {
+    display: flex;
+    justify-content: space-between;
+  }
+  .interview__subject-img {
+    width: 30%;
+    max-height: 6rem;
+  }
+
+  .interviews .featured_image {
+    display: none;  
+  }
+  .interviews .interview__subject {
+    padding-top: 1rem;
+  }
+
+  h1, .section__title {
+    font-size: 1.5rem;
+  }
+  .interview__subject-info .autonotalks, 
+  .interview__subject-info .autonotalks-presents {
+    font-size: .7rem;
+  }
+
+
+}
+
+@media (min-width: 331px) {
 
   /*  TABS  (20-768) */
 
@@ -226,14 +292,28 @@
     text-align: center;
     text-transform: uppercase;
     background-color: $body-bg;
+    color: $dark;
   }
 
-  .tabs .tab {
+  .tab-links .tab {
     display: inline-block;
     position: relative;
     cursor: pointer;
     z-index: 2;
     border-bottom: 1px solid $light;
+    &:hover,
+    &:focus {
+      color: $purple;
+    }
+  }
+  .tab-links.page-updates #updates-tab {
+    border-bottom: 3px solid $purple;
+  }
+  .updates .tab-links #updates-tab {
+    border-bottom: 3px solid $purple;
+  }
+  .musings .tab-links #musings-tab {
+    border-bottom: 3px solid $purple;
   }
 
   #musings-switch:checked ~ .tab-links #musings-tab,
@@ -269,51 +349,6 @@
       color: $purple;
     }
   }
-
-  span.featured-time {
-    display: none;
-  }
-
-
-  /* Remove redundant Updates from mobile front page */
-  /* and update list */
-
-  .page-autonomusings,
-  .page-updates {
-    .sidebar-2__container {
-      .section-title.upper,
-      .sidebar__updates,
-      .see-all__wrapper {
-      display: none;
-      }
-    }
-  }
-
-    /* Interview Pages (0 - 768 ) */
-
-  .interview__subject {
-    display: flex;
-    justify-content: space-between;
-  }
-  .interview__subject-img {
-    width: 30%;
-  }
-
-  .interviews .featured_image {
-    display: none;  
-  }
-  .interviews .interview__subject {
-    padding-top: 1rem;
-  }
-
-  h1, .section__title {
-    font-size: 1.5rem;
-  }
-  .interview__subject-info .autonotalks, 
-  .interview__subject-info .autonotalks-presents {
-    font-size: .7rem;
-  }
-
 
 }
 
@@ -405,7 +440,9 @@
   }
 
 /*  TABS  (768 +) */
-
+  .tab-links { 
+    display: none;
+  }
   .tabs .switch {
     display: none;
   }
@@ -505,6 +542,10 @@
   .related__item {
     width: 33%;
     margin-right: 2rem;
+  }
+
+  figure {
+    margin: 2rem -1rem 2rem;
   }
 }
 
