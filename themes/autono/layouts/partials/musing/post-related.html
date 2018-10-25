@@ -1,0 +1,64 @@
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
+<div class="related-content">
+  <h3>Related to These Thoughts</h3>
+  <ul class="related__list">
+    {{ range . }}
+    <li class="related__item">
+
+
+			<div class="related-item__container">
+				{{ if eq "Type" "update" }} 
+				<span class="item__title--large">
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+							</span>
+				{{ end }}
+				<span class="item__categories">
+					<!-- categories -->
+					{{ if eq "Type" "interview" }} 
+					<i class="fas fa-microphone-alt"></i>
+					{{ end }}
+					{{ with .Params.categories }}
+						{{ $total := len . }}
+						{{ if gt $total 0 }}
+						{{ $total := sub $total 1 }}
+							{{ range $i, $cat := sort . }}
+								<a class="badge badge-category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
+								{{ if lt $i $total }}•{{ end }}
+								{{ if eq "Type" "interview" }} 
+									<i class="fas fa-microphone-alt"></i>
+								{{ end }}
+							{{ end }}
+						{{ end }}
+					{{ end }}
+				</span>
+				
+				{{ if ne "Type" "update" }} 
+				<span class="item__title--big">
+					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					{{ if eq .Params.Type "interview" }} 
+						<i class="fas fa-microphone-alt"></i>
+					{{ end }}
+					{{ if .Draft }}<sup><i class="fas fa-comment-dots fa-xs"></i></sup>{{ end }}
+				</span>
+				{{ end }}
+				
+				{{ if (isset .Params "subject_organization") }}
+					<div class="subject__organization">{{ .Params.subject_organization }}</div>
+				{{ end }}
+
+				{{ if eq "Type" "update" }} 
+					<span class="item__date update-item__date">
+							{{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
+					</span>
+					{{ else }}
+						<span class="item__date">
+							{{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
+						</span>
+				{{ end }}
+			</div>
+		</li>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}

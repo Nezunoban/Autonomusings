@@ -3,7 +3,7 @@ baseurl = "https://example.com/"
 languageCode = "en"
 
 title = "Title"
-theme = "hyde-hyde"
+theme = "autono"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
@@ -43,10 +43,10 @@ theme = "hyde-hyde"
 
 ## Main Menu
 [[menu.main]]
-    name = "Posts"
+    name = "Musings"
     weight = 100
-    identifier = "posts"
-    url = "/posts/"
+    identifier = "musings"
+    url = "/musings/"
 [[menu.main]]
     name = "Portfolio"
     identifier = "portfolio"

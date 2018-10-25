@@ -4,8 +4,10 @@ title = "Autonomusings"
 
 theme = ["autono"]
 relatedPosts = true
-## Test comment
 publishDir = "docs"
+canonifyURLs = true
+
+summaryLength = 20
 
 
 ## Hugo Built-in Features
@@ -22,7 +24,8 @@ publishDir = "docs"
     author = "Autonomusings"
     # title = "Title"
     # description = "..."
-    authorimage = "/img/logo.png"
+    authorimage = "img/logo.png"
+    authorimagesmall = "img/logosmall.svg"
     dateformat = "Jan 2, 2006"
     highlightjs = true
     highlightjsstyle = "github"
@@ -31,6 +34,11 @@ publishDir = "docs"
     
     # Table of contents
     #toc = none, "hugo", or "tocbot"
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
 
 ## Social Accounts
 [params.social]
@@ -46,17 +54,17 @@ publishDir = "docs"
 
 ## Main Menu
 [[menu.main]]
-    name = "Posts"
+    name = "Musings"
     weight = 100
-    identifier = "posts"
-    url = "/posts/"
+    identifier = "musings"
+    url = "/musings/"
 [[menu.main]]
-    name = "Portfolio"
-    identifier = "portfolio"
+    name = "Updates"
+    identifier = "updates"
     weight = 200
-    url = "/portfolio/"
+    url = "/updates/"
 [[menu.main]]
     name = "About"
     identifier = "about"
-    weight = 300
+    weight = 400
     url = "/about/"

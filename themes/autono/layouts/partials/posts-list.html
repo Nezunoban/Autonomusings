@@ -1,10 +1,69 @@
 {{ range . }}
-<li>
-  <span class="list__title--small">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{if not .Date.IsZero}}
-      <time class="pull-right hidden-tablet">{{.Date.Format ("Jan 02 '06")}}</time>
-      {{end}}
+<li class="list-page post-list__item">
+  <span class="list-page-item__container">
+      <span class="featured-time">
+          <i class="fas fa-clock"></i> {{ .ReadingTime }} min
+        </span>
+
+          {{ if (isset .Params "subject_image") }}
+            <div class="interview__subject-image">
+                <a href="{{ .RelPermalink }}">
+                  <img class="profile-image img--circle" {{ with .Params.subject_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+                </a>
+            </div>
+            {{ else }}
+            {{ if ne .Params.Type "update" }}
+            <div class="featured-image">
+              <a href="{{ .RelPermalink }}">
+                <img {{ with .Params.featured_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+              </a>
+            </div>
+            {{ end }}
+          {{ end }}
+
+          {{ if eq .Params.Type "update" }}
+            <div class="list-page-update__wrap">
+            {{ else }}
+            <div class="front-item__wrap">
+          {{ end }}
+          <span class="item__categories">
+            <!-- categories -->
+              {{ with .Params.categories }}
+              {{ $total := len . }}
+              {{ if gt $total 0 }}
+                {{ $total := sub $total 1 }}
+                  {{ range $i, $cat := sort . }}
+                      <a class="badge badge-category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
+                      {{ if lt $i $total }}•{{ end }}
+                      {{ if eq $cat "AutonoTalks" }} <span class="autonotalks-presents">presents</span> {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+          </span>
+          
+          <span class="item__title--big">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ if .Draft }}<sup><i class="fas fa-comment-dots fa-xs"></i></sup>{{ end }}
+          </span>
+          
+          {{ if (isset .Params "subject_organization") }}
+            <div class="subject__organization">{{ .Params.subject_organization }}</div>
+          {{ end }}
+
+          <div class="post-list-item__body">
+          {{ if .Description }}
+          {{ .Description }}
+          {{ else }}
+          {{ .Summary }}
+          {{ end }}
+          {{ if .Truncated }}
+            ... <a class="read-more-symbol" href="{{ .RelPermalink }}">➦</a>
+          </div>
+          {{ end }}
+          <span class="item__date">
+            {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
+          </span>
+        </div>
   </span>
 </li>
 {{ end }}

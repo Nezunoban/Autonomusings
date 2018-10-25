@@ -6,9 +6,82 @@
     <description>Recent content in Tags on Autonomusings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 18 Oct 2018 12:08:52 -0700</lastBuildDate>
     
 	<atom:link href="https://github.com/Nezunoban/autonomusings/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ai</title>
+      <link>https://github.com/Nezunoban/autonomusings/tags/ai/</link>
+      <pubDate>Thu, 18 Oct 2018 12:08:52 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>https://github.com/Nezunoban/autonomusings/tags/automation/</link>
+      <pubDate>Thu, 18 Oct 2018 12:08:52 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficiency</title>
+      <link>https://github.com/Nezunoban/autonomusings/tags/efficiency/</link>
+      <pubDate>Tue, 16 Oct 2018 12:24:08 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/tags/efficiency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploration</title>
+      <link>https://github.com/Nezunoban/autonomusings/tags/exploration/</link>
+      <pubDate>Sat, 13 Oct 2018 15:16:15 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/tags/exploration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://github.com/Nezunoban/autonomusings/tags/machine-learning/</link>
+      <pubDate>Thu, 18 Oct 2018 12:08:52 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manufacturing</title>
+      <link>https://github.com/Nezunoban/autonomusings/tags/manufacturing/</link>
+      <pubDate>Tue, 16 Oct 2018 12:24:08 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/tags/manufacturing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Safety</title>
+      <link>https://github.com/Nezunoban/autonomusings/tags/safety/</link>
+      <pubDate>Sat, 13 Oct 2018 15:16:15 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/tags/safety/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vehicles</title>
+      <link>https://github.com/Nezunoban/autonomusings/tags/vehicles/</link>
+      <pubDate>Sat, 13 Oct 2018 15:16:15 -0700</pubDate>
+      
+      <guid>https://github.com/Nezunoban/autonomusings/tags/vehicles/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

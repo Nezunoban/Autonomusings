@@ -3,12 +3,13 @@
 {{ end }}
 
 {{ define "content" }}
-    <div class="post">
+    <div class="about-page">
         <h1>{{ .Title }}</h1>
         {{ .Content }}
-  </div>
+    </div>
 {{ end }}
 
 {{ define "footer" }}
 {{ partial "footer/font-awesome-js.html" . }}
+{{ partial "footer/micromodal-js.html" . }}
 {{ end }}

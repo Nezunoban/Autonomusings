@@ -1,0 +1,42 @@
+.badge-category,
+a.badge-category {
+  color: $purple !important;
+  background: transparent;
+  background-color: transparent;
+  font-family: $secondary-font-family;
+  text-transform: uppercase;
+  &:hover, &:focus {
+    color: #fff !important;
+    background-color: $purple;
+    text-decoration: none;
+    border-bottom: none;
+  }
+}
+
+.badge-tag,
+a.badge-tag {
+  color: #fff !important;
+  background-color: desaturate($purple, 10%);
+  &:hover, &:focus {
+    color: $purple !important;
+    background: transparent;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: none;
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+.badge:nth-child(1) {
+  margin-left: -0.25em;
+}

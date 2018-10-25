@@ -1,0 +1,78 @@
+// for the list of posts
+
+.section__title {
+	font-size: $section__title-font-size;
+}
+
+.post-list__item {
+    margin-bottom: 3em;
+    position: relative;
+    border-bottom: 1px solid $gray-3;
+	padding-bottom: 2.5rem;
+}
+
+.item__title--big {
+	display: block;
+	font-size: $item__title-big-font-size;
+	font-family: $secondary-font-family;
+	font-weight: 600;
+	line-height: 1.25;
+	a {
+		color: $dark;
+		&:hover,
+		&:focus {
+			@include link-no-decoration();
+			//color: $purple;
+			border-bottom: 1px solid $purple;
+		}
+	}
+}
+
+.item__title--small {
+	display: block;
+	font-size: 1rem;
+	font-family: $secondary-font-family;
+	font-weight: 600;
+	line-height: 1.25;
+	a {
+		color: $dark;
+		&:hover,
+		&:focus {
+			@include link-no-decoration();
+			//color: $purple;
+			border-bottom: 1px solid $purple;
+		}
+	}
+}
+
+.item__date {
+	color: $item__date-color;
+	display: block;
+	font-size: $item__date-font-size;
+	margin-bottom: .2rem;
+	margin-top: .2rem;
+	font-family: $secondary-font-family;
+}
+
+.autonotalks-presents {
+	font-family: $secondary-font-family;
+	color: $mid;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+    margin-left: -.5em;
+    font-weight: 300;
+}
+.subject__title {
+	font-family: $secondary-font-family;
+}
+.subject__organization {
+	font-family: $secondary-font-family;
+	font-weight: 600;
+}
+.subject__seperator {
+	font-family: $secondary-font-family;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+

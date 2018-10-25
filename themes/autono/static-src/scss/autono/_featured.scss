@@ -1,0 +1,71 @@
+// FEATURED
+//
+// For featured image at the top of posts
+
+
+
+.article--featured {
+	position: relative;
+	background: white;
+}
+@media (min-width: 768px) {
+
+	.article--featured {
+		margin: 7rem 0rem 0rem 2rem;
+		padding: 2.5rem 2rem;
+	}
+	.featured__wrap--fixed {
+		position: absolute;
+		width: 80%;
+	}
+	.featured__container {
+		position: relative;
+		top: 0;
+		height: 20em;
+		display: block;
+		overflow: hidden;
+		margin-top: -10em;
+	}
+	.featured_image {
+		width: 100%;
+		max-width: none;
+		border-radius: 0;
+		margin: 0;
+		position: absolute;
+	}
+}
+
+@media (min-width: 1200px) {
+	.article--featured {
+		margin: 7rem 3rem 3rem;
+		padding: 3.5rem 3rem;
+	}
+	.featured__wrap--fixed {
+		position: absolute;
+		width: 80%;
+	}
+	.featured__container {
+		position: relative;
+		top: 0;
+		height: 20em;
+		display: block;
+		overflow: hidden;
+		margin-top: -5em;
+	}
+	.featured_image {
+		//position: fixed;
+		width: 100%;
+		max-width: none;
+		border-radius: 0;
+		margin: 0;
+		position: absolute;
+	}
+}
+
+span.featured-time {
+    width: 5rem;
+    position: absolute;
+	left: 0;
+	color: $light;
+	font-family: $secondary-font-family;
+}

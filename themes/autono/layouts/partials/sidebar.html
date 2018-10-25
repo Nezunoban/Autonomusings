@@ -5,25 +5,33 @@
       <span class="site__title">
         <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
       </span>
-      {{ with .Site.Params.authorimage }}
-      {{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
-      {{ $authorImage := (printf "%s/%s" $.Site.BaseURL $strippedSlash) }}
+      
       <div class="author-image">
-        <img src="{{$authorImage}}" alt="Author Image" class="img--circle img--headshot element--center">
+          <a href="{{ .Site.BaseURL }}">
+              {{ with .Site.Params.authorimage }}
+              {{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
+              {{ $authorImage := (printf "%s/%s" $.Site.BaseURL $strippedSlash) }}
+              <img src="{{$authorImage}}" alt="Logo Image" class="element--center logo--large">
+              {{ end }}
+
+              {{ with .Site.Params.authorimagesmall }}
+              {{ $strippedSlash := ($.Site.Params.authorimagesmall | replaceRE "^(/)+(.*)" "$2") }}
+              {{ $authorImageSmall := (printf "%s/%s" $.Site.BaseURL $strippedSlash) }}
+              <img src="{{$authorImageSmall}}" alt="Logo Image" class="logo--small">
+              {{ end }}
+            </a>
       </div>
-      {{ end }}
       <p class="site__description">
         {{ with .Site.Params.description }} {{.}} {{end}}
       </p>
     </div>
     <div class="collapsible-menu">
       <input type="checkbox" id="menuToggle">
-      <label for="menuToggle">{{ .Site.Title }}</label>
+      <label for="menuToggle"><span class="menuToggle__text hidden">menu</span></label>
       <div class="menu-content">
         {{ partial "sidebar/menu.html" . }}
         {{ partial "sidebar/social.html" . }}
       </div>
     </div>
-    {{ partial "sidebar/copyright.html" . }}
   </div>
 </div>

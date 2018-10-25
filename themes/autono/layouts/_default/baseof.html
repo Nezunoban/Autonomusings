@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-    {{ block "header" . }}{{ end }}
-    <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
-    {{ partial "sidebar.html" . }}
-        <div class="content container">
-            {{ block "content" . }}{{ end }}
-        </div>
-        {{ block "footer" . }}{{ end }}
-    </body>
+	{{ block "header" . }}{{ end }}
+	<body class="page-{{ .Title | urlize }} {{ .Section | urlize }}">
+		<div class="site__nav">
+			{{ partial "sidebar.html" . }}
+		</div>
+		<div class="site__main">
+			<div class="content container">
+				{{ block "content" . }}{{ end }}
+				{{ partial "micromodal-updates.html" . }}
+			</div>
+			<div class="content-secondary container">
+				{{ block "content-secondary" . }}{{ end }}
+			</div>
+			<div class="sidebar-2__wrapper container">
+				{{ partial "sidebar-2.html" . }}
+			</div>
+			{{ block "footer" . }}{{ end }}
+		</div>
+	</body>
 </html>

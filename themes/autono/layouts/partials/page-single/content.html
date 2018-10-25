@@ -1,12 +1,40 @@
-<article>
+<div class="featured__wrap--fixed">
+  <div class="featured__container">
+     <img {{ with .Params.featured_image }} class="featured_image" src="{{ . }}"{{ end }} alt="{{ .Title }}">
+  </div>
+</div>
+<article class="article--featured">
   <header>
-    <h1>{{ .Title }}</h1>
+    <span class="item__categories">
+      <!-- categories -->
+        {{ with .Params.categories }}
+        {{ $total := len . }}
+        {{ if gt $total 0 }}
+          {{ $total := sub $total 1 }}
+            {{ range $i, $cat := sort . }}
+              <a class="badge badge-category {{ $cat | urlize }}" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
+              {{ if lt $i $total }}•{{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+    </span>
+    <h1 class="post__title">{{ .Title }}</h1>
     {{ with .Params.subtitle }}
     <span class="post__subtitle">
       {{.}}
     </span>
     {{ end }}
     {{ partial "page-single/post-meta.html" . }}
+    {{ with .Params.authors }}
+    {{ range $ind,$val := . }}
+      {{$author := $val | urlize }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+      <div class="meta-author">
+        <span class="meta-author__by">by </span><a class="meta-author-__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
+      </div>
+        {{ end -}}
+      {{ end }}
+    {{ end }}
   </header>
   {{ $tableOfContents := .TableOfContents }}
   {{ with .Site.Params.toc }}
@@ -21,9 +49,18 @@
   </div>
   {{ end }}
   <div class="post">
+    {{ if eq .Params.executive_summary true }}
+      {{ partial "page-single/executive-summary.html" . }}
+    {{ end }}
     {{ .Content }}
   </div>
-  {{ partial "page-single/post-navigation.html" . }}
-  {{ partial "page-single/post-related.html" . }}
+
+  {{ if (isset .Params "source_url") }}
+  <h3 class="sources__title">Sources:</h3>
+  <div class="sources font-secondary">
+    <a  {{ with .Params.source_url }} href="{{ . }}"{{ end }} class="source_url" target="_blank">{{ with .Params.source_name }}{{ . }}{{ end }}  <i class="fas fa-arrow-right"></i></a>
+  </div>
+  {{ end }}
+  {{ partial "page-single/authorbio.html" . }}
   {{ partial "page-single/post-comment.html" . }}
 </article>

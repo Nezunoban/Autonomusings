@@ -1,0 +1,28 @@
+<!-- Special thanks to https://alligator.io/css/collapsible/ -->
+<div class="wrap-collapsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle" tabindex="0">Executive Summary</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      {{ if (isset .Params "executive_intro") }}<p><span class="executive_intro">{{ .Params.executive_intro }}</span></p> {{ end }}
+
+      {{ if (isset .Params "executive_point1") }}
+      <ul class="executive_list">
+          <li>{{ .Params.executive_point1 }}</li>
+          {{ if (isset .Params "executive_point2") }}
+          <li>{{ .Params.executive_point2 }}</li>
+          {{ end }}
+          {{ if (isset .Params "executive_point3") }}
+          <li>{{ .Params.executive_point3 }}</li>
+          {{ end }}
+          {{ if (isset .Params "executive_point4") }}
+          <li>{{ .Params.executive_point4 }}</li>
+          {{ end }}
+          {{ if (isset .Params "executive_point5") }}
+          <li>{{ .Params.executive_point5 }}</li>
+          {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </div>
+</div>

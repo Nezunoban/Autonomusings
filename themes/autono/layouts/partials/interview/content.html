@@ -1,0 +1,75 @@
+<div class="featured__wrap--fixed">
+  <div class="featured__container">
+      <img {{ with .Params.featured_image }} class="featured_image" src="{{ . }}"{{ end }} alt="{{ .Title }}">
+  </div>
+</div>
+<article class="article--featured">
+  <header>
+    <div class="interview__subject">
+      <div class="interview__subject-info">
+        <span class="item__categories">
+          <!-- categories -->
+          {{ with .Params.categories }}
+          {{ $total := len . }}
+          {{ if gt $total 0 }}
+            {{ $total := sub $total 1 }}
+              {{ range $i, $cat := sort . }}
+                  <a class="badge badge-category {{ $cat | urlize }}" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
+                  {{ if lt $i $total }}•{{ end }}
+                  {{ if eq $cat "AutonoTalks" }} <span class="autonotalks-presents">presents</span> {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </span>
+        <h1 class="post__title">{{ .Title }}</h1>
+        {{ with .Params.subject_title }}
+        <span class="subject__title">{{ . }}</span>
+        {{ end }}
+        {{ if isset .Params (and ("subject_title") ("subject_organization")) }} 
+        <span class="subject__seperator">  |  </span>
+        {{ end }}
+        {{ with .Params.subject_organization }}
+        <span class="subject__organization">{{ . }}</span>
+        {{ end }}
+      </div>
+      <div class="interview__subject-img"> 
+          <img class="profile-image img--circle" {{ with .Params.subject_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+      </div>
+    </div>
+
+    {{ partial "interview/post-meta.html" . }}
+
+    {{ with .Params.authors }}
+    {{ range $ind,$val := . }}
+      {{$author := $val | urlize }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+      <div class="meta-author">
+        <span class="meta-author__by">by </span><a class="meta-author-__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
+      </div>
+        {{ end -}}
+      {{ end }}
+    {{ end }}
+
+  </header>
+
+  {{ $tableOfContents := .TableOfContents }}
+  {{ with .Site.Params.toc }}
+  <div class="toc-wrapper">
+    <input type="checkbox" id="tocToggle">
+    <label for="tocToggle">Table of Content</label>
+    {{ if eq . "hugo" }}
+        {{ $tableOfContents }}
+    {{ else if eq . "tocbot"}}
+      <div class="toc" id="TableOfContents"></div>
+    {{ end }}
+  </div>
+  {{ end }}
+  <div class="post">
+      {{ if eq .Params.executive_summary true }}
+        {{ partial "page-single/executive-summary.html" . }}
+      {{ end }}
+    {{ .Content }}
+  </div>
+  {{ partial "page-single/authorbio.html" . }}
+  {{ partial "page-single/post-comment.html" . }}
+</article>

@@ -15,7 +15,7 @@ body {
 }
 
 html {
-  font-family: $root-font-family;
+  font-family: $body-font-family;
   font-size: $root-font-size;
   line-height: $root-line-height;
 
@@ -51,7 +51,7 @@ img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
+  //border-radius: 5px;
 }
 
 table {
@@ -76,3 +76,6 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
+
+
+

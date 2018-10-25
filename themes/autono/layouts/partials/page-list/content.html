@@ -1,5 +1,5 @@
-<span class="section__title">{{ .Title }}</span>
-<ul class="posts">
+<h1 class="section__title section-list__title">{{ .Title }}</h1>
+<ul class="posts list-style--none">
     {{ with .Data.Pages }}
         {{ partial "posts-list.html" . }}
     {{ end }}

@@ -1,0 +1,54 @@
+@mixin transform($string){
+	-webkit-transform: $string;
+	-moz-transform: 	 $string;
+	-ms-transform: 		 $string;
+	-o-transform: 		 $string;
+}
+@mixin rotate($deg){
+	-webkit-transform: rotate($deg);
+	-moz-transform: 	 rotate($deg);
+	-ms-transform: 		 rotate($deg);
+	-o-transform: 		 rotate($deg);
+}
+
+@mixin link-no-decoration() {
+	border-style: none;
+	text-decoration: none;
+}
+
+@mixin link-hover() {
+	color: $link-hover-color;
+	border-bottom: 1px dotted $gray-4;
+	text-decoration: none;
+	background: transparent;
+	background-color: transparent;
+	word-wrap: break-word;
+}
+
+/**
+ ********************************
+ * _ACCESSIBILITY.SCSS
+ ********************************
+ */
+
+/**
+ * @mixin accessibility
+ * @description Hide content off-screen without resorting to 'display:none;'.
+ *
+ * @param {string} [$important=''] Option to append values with !important
+ *
+ * @example
+    .foo {
+      @include accessibility;
+    }
+ */
+ @mixin accessibility($important: "") {
+	border: 0 #{$important};
+	clip: rect(0 0 0 0) #{$important};
+	height: 1px #{$important};
+	margin: -1px #{$important};
+	overflow: hidden #{$important};
+	padding: 0 #{$important};
+	position:  absolute #{$important};
+	width: 1px #{$important};
+  }
