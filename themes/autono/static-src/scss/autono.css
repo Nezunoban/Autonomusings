@@ -198,7 +198,7 @@ figure {
 }
 
 blockquote, .important, .warning {
-  padding: .8889rem;
+  padding: .8889rem 2rem;
   margin-top: 1.4em;
   margin-left: 0px;
   margin-right: 0px;

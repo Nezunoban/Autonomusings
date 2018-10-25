@@ -1,0 +1,57 @@
+.pullquote {
+    text-align: left;
+    font-style: italic;
+    margin: 1.5em 0;
+    padding: 0;
+    color: $dark;
+    font-size: 2rem;
+    //padding: 1rem .5rem; 
+    line-height: 1.333em;
+    //border-bottom: 1px solid $mid;
+    //border-top: 1px solid $mid;
+    border-left: 0 none transparent;
+    border-right: 0 none transparent;
+    background-color: transparent;
+    border-radius: 0;
+    p {
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+
+        /* old browsers */
+            color: $purple;
+        /* IE10+ */ 
+        background: -ms-linear-gradient(top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        /* Mozilla Firefox */ 
+        background: -moz-linear-gradient(top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        /* Opera */ 
+        background: -o-linear-gradient(top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        /* Webkit (Safari/Chrome 10) */ 
+        background: -webkit-gradient(linear, right top, left bottom, color-stop(0, $gradient-color-1), color-stop(100, $gradient-color-2));
+        /* Webkit (Chrome 11+) */ 
+        background: -webkit-linear-gradient(top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        /* W3C Markup */ 
+        background: linear-gradient(to top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-color-1', endColorstr='$gradient-color-2',GradientType=1 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    @media (min-width: 992px) {   
+        //padding: 1rem .5rem 1.5rem .5rem;
+
+        &.left {
+            width:        45%;
+            float:        left;
+            margin: 1.5em 35px 1.5em -4rem;
+        }
+        &.right {
+            width:        45%;
+            float:        right;
+            margin: 1.5em -4rem 1.5em 35px;
+        }
+    }
+    &.blur {
+        //background-color: lighten(map-get($colors, 'base'), 54%);
+    }
+}

@@ -21,6 +21,7 @@ h3,
 h4,
 .section__title {
 	font-family: $secondary-font-family;
+	color: $dark;
 }
 
 h1,
@@ -44,8 +45,9 @@ h1,
 }
 
 h2 {
-	font-size: $h2-font-size;
 	margin-bottom: .5rem;
+    margin-top: 2.5rem;
+	font-size: $h2-font-size;
 	font-weight: $heading-font-weight;
 }
 
@@ -71,7 +73,7 @@ figure {
 }
 
 %quotebox {
-	padding: .8889rem;
+	padding: .8889rem 2rem;
 	margin-top: 1.4em;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -82,11 +84,11 @@ figure {
 	border-right-width: 6px;
 	border-right-style: solid;
 	border-right-color: rgba(0, 0, 0, 0) transparent;
-	color: #7a7a7a;
+	color: $gray-7;
 }
 
 blockquote {
-	background-color: #fafafa;
+	background-color: $gray-0;
 	border-top-color: $light;
 	border-bottom-color: $light;
 	@extend %quotebox;
@@ -296,5 +298,24 @@ ul.posts.list-style--none {
 .see-all {
 	font-family: $secondary-font-family;
 }
+
+figure {
+	margin: 2rem 0 2rem;
+	img {
+		margin-bottom: .5rem;
+	}
+}
+
+figcaption {
+    font-family: $secondary-font-family;
+    color: $mid;
+    /* text-align: center; */
+    font-style: italic;
+	font-size: .85em;
+	p {
+		margin-top: 0;
+	}
+}
+
 
 

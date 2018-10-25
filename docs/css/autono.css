@@ -513,6 +513,53 @@ footer {
   }
 }
 
+.pullquote {
+  text-align: left;
+  font-style: italic;
+  margin: 1.5em 0;
+  padding: 0;
+  color: #30363c;
+  font-size: 2rem;
+  line-height: 1.333em;
+  border-left: 0 none transparent;
+  border-right: 0 none transparent;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.pullquote p {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  /* old browsers */
+  color: #933f8f;
+  /* IE10+ */
+  /* Mozilla Firefox */
+  /* Opera */
+  /* Webkit (Safari/Chrome 10) */
+  /* Webkit (Chrome 11+) */
+  /* W3C Markup */
+  background: -webkit-gradient(linear, left bottom, right top, from(#FD6E1B), to(#5d378b));
+  background: linear-gradient(to top right, #FD6E1B 0%, #5d378b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-color-1', endColorstr='$gradient-color-2',GradientType=1 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 992px) {
+  .pullquote.left {
+    width: 45%;
+    float: left;
+    margin: 1.5em 35px 1.5em -4rem;
+  }
+  .pullquote.right {
+    width: 45%;
+    float: right;
+    margin: 1.5em -4rem 1.5em 35px;
+  }
+}
+
 /**************************\
 Subscription Block - Sidebar
 \**************************/
@@ -563,6 +610,7 @@ Subscription Block - Sidebar
   border: 1px solid #311648;
   border-radius: 0px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button:hover, .button:focus {
@@ -631,10 +679,12 @@ Subscription Block - Sidebar
 }
 
 .article__subscribe {
+  margin: 2rem 0rem;
   padding: 1.5em;
   padding-bottom: 2rem;
   background-color: #eee;
   border-bottom: 3px solid #a4a4ad;
+  border-radius: 3px;
 }
 
 @media (max-width: 768px) {
@@ -697,7 +747,7 @@ Subscription Block - Sidebar
     margin: 0 1rem 1rem 0rem;
     display: block;
     /* font-weight: 600; */
-    font-size: 1.667em;
+    font-size: 1.333em;
   }
   .article__subscribe #mc_embed_signup_scroll {
     display: -webkit-box;
@@ -730,6 +780,7 @@ h3,
 h4,
 .section__title {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #30363c;
 }
 
 h1,
@@ -755,8 +806,9 @@ h1,
 }
 
 h2 {
-  font-size: 1.85rem;
   margin-bottom: .5rem;
+  margin-top: 2.5rem;
+  font-size: 1.85rem;
   font-weight: 400;
 }
 
@@ -782,7 +834,7 @@ figure {
 }
 
 blockquote, .important, .warning {
-  padding: .8889rem;
+  padding: .8889rem 2rem;
   margin-top: 1.4em;
   margin-left: 0px;
   margin-right: 0px;
@@ -793,7 +845,7 @@ blockquote, .important, .warning {
   border-right-width: 6px;
   border-right-style: solid;
   border-right-color: rgba(0, 0, 0, 0) transparent;
-  color: #7a7a7a;
+  color: #767676;
 }
 
 blockquote {
@@ -1028,6 +1080,26 @@ ul.posts.list-style--none {
 
 .see-all {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+figure {
+  margin: 2rem 0 2rem;
+}
+
+figure img {
+  margin-bottom: .5rem;
+}
+
+figcaption {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #747481;
+  /* text-align: center; */
+  font-style: italic;
+  font-size: .85em;
+}
+
+figcaption p {
+  margin-top: 0;
 }
 
 .sidebar {
@@ -1661,6 +1733,14 @@ a.badge-tag:focus {
   font-size: 1.5rem;
 }
 
+.tab-links .tab {
+  display: none;
+}
+
+.tabs .switch {
+  display: none;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   html,
   body {
@@ -1712,6 +1792,9 @@ a.badge-tag:focus {
     padding: .8rem 2rem;
     display: block;
   }
+  .sidebar-2 .section__title, .sidebar-2 .upper {
+    font-size: 1.25rem;
+  }
   /*  MENU  (20-768) */
   .menu-content {
     padding: 0 0 0 0px;
@@ -1734,6 +1817,7 @@ a.badge-tag:focus {
     background: #eee;
     border-bottom: 3px solid #30363c;
     border-right: 2px solid #a4a4ad;
+    border-radius: 3px;
   }
   .collapsible-menu li {
     display: block;
@@ -1762,6 +1846,7 @@ a.badge-tag:focus {
     background-color: #eee;
     background-image: url(../img/menu-close-dark.svg);
     border-right: 2px solid #a4a4ad;
+    border-radius: 3px;
   }
   input#menuToggle:checked ~ .menu-content {
     max-height: 100% !important;
@@ -1785,6 +1870,49 @@ a.badge-tag:focus {
     max-width: 5rem;
     margin-right: 1rem;
   }
+  span.featured-time {
+    display: none;
+  }
+  /* Remove redundant Updates from mobile front page */
+  /* and update list */
+  .page-autonomusings .sidebar-2__container .section-title.upper,
+  .page-autonomusings .sidebar-2__container .sidebar__updates,
+  .page-autonomusings .sidebar-2__container .see-all__wrapper,
+  .page-updates .sidebar-2__container .section-title.upper,
+  .page-updates .sidebar-2__container .sidebar__updates,
+  .page-updates .sidebar-2__container .see-all__wrapper {
+    display: none;
+  }
+  /* Interview Pages (0 - 768 ) */
+  .interview__subject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .interview__subject-img {
+    width: 30%;
+    max-height: 6rem;
+  }
+  .interviews .featured_image {
+    display: none;
+  }
+  .interviews .interview__subject {
+    padding-top: 1rem;
+  }
+  h1,
+  .section__title {
+    font-size: 1.5rem;
+  }
+  .interview__subject-info .autonotalks,
+  .interview__subject-info .autonotalks-presents {
+    font-size: .7rem;
+  }
+}
+
+@media (min-width: 331px) {
   /*  TABS  (20-768) */
   .tabs .switch {
     display: none;
@@ -1820,13 +1948,26 @@ a.badge-tag:focus {
     text-align: center;
     text-transform: uppercase;
     background-color: #fff;
+    color: #30363c;
   }
-  .tabs .tab {
+  .tab-links .tab {
     display: inline-block;
     position: relative;
     cursor: pointer;
     z-index: 2;
     border-bottom: 1px solid #a4a4ad;
+  }
+  .tab-links .tab:hover, .tab-links .tab:focus {
+    color: #933f8f;
+  }
+  .tab-links.page-updates #updates-tab {
+    border-bottom: 3px solid #933f8f;
+  }
+  .updates .tab-links #updates-tab {
+    border-bottom: 3px solid #933f8f;
+  }
+  .musings .tab-links #musings-tab {
+    border-bottom: 3px solid #933f8f;
   }
   #musings-switch:checked ~ .tab-links #musings-tab,
   #updates-switch:checked ~ .tab-links #updates-tab {
@@ -1851,45 +1992,6 @@ a.badge-tag:focus {
   /* PRESENTATIONAL STYLES */
   .tabs .tab:hover, .tabs .tab:focus {
     color: #933f8f;
-  }
-  span.featured-time {
-    display: none;
-  }
-  /* Remove redundant Updates from mobile front page */
-  /* and update list */
-  .page-autonomusings .sidebar-2__container .section-title.upper,
-  .page-autonomusings .sidebar-2__container .sidebar__updates,
-  .page-autonomusings .sidebar-2__container .see-all__wrapper,
-  .page-updates .sidebar-2__container .section-title.upper,
-  .page-updates .sidebar-2__container .sidebar__updates,
-  .page-updates .sidebar-2__container .see-all__wrapper {
-    display: none;
-  }
-  /* Interview Pages (0 - 768 ) */
-  .interview__subject {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .interview__subject-img {
-    width: 30%;
-  }
-  .interviews .featured_image {
-    display: none;
-  }
-  .interviews .interview__subject {
-    padding-top: 1rem;
-  }
-  h1,
-  .section__title {
-    font-size: 1.5rem;
-  }
-  .interview__subject-info .autonotalks,
-  .interview__subject-info .autonotalks-presents {
-    font-size: .7rem;
   }
 }
 
@@ -1973,6 +2075,9 @@ a.badge-tag:focus {
     display: none;
   }
   /*  TABS  (768 +) */
+  .tab-links {
+    display: none;
+  }
   .tabs .switch {
     display: none;
   }
@@ -2046,6 +2151,9 @@ a.badge-tag:focus {
   .related__item {
     width: 33%;
     margin-right: 2rem;
+  }
+  figure {
+    margin: 2rem -1rem 2rem;
   }
 }
 
