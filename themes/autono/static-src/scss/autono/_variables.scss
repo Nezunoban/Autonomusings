@@ -3,7 +3,7 @@ $gray-1: #f9f9f9;
 $gray-2: #eee;
 $gray-3: #ddd;
 $gray-4: #ccc;
-$gray-4: #bbb;
+$gray-5: #bbb;
 $gray-6: #878787;
 $gray-7: #767676;
 $gray-8: #515151;
@@ -13,7 +13,8 @@ $dark: rgb(48, 54, 60);
 $darkish: rgb(53, 62, 74);
 $dark-trans: rgba(48, 54, 60, 0.75);
 $mid: rgb(116, 116, 129);
-$light: rgb(176, 176, 182);
+$light: #a4a4ad;
+$lighter: rgb(176, 176, 182);
 $purple: rgb(147, 63, 143);
 $orange: #FD6E1B;
 
@@ -81,7 +82,7 @@ $tag-color: #606570;
 $tag-font-size: .667rem;
 
 // list of posts
-$item__date-color: #9a9a9a;
+$item__date-color: $light;
 $item__date-font-size: 1rem;
 $item__title-big-font-size: 1.785rem;
 

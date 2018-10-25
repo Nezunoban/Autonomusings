@@ -3,13 +3,13 @@ title: "Jason Bourne"
 subject_name: Jason Bourne
 subject_title: Title
 subject_organization: Organizational Company
-subject_image: interviews/images/people/pic01.jpg
+subject_image: /interviews/images/people/pic-default.png
 author: Josh Ouellette
-date: 2018-10-13T15:15:00-07:00
-lastmod: 2018-10-13T15:15:00-07:00
-featured_image: interviews/images/pic01.jpg
+date: 2018-10-01T15:15:00-07:00
+lastmod: 2018-10-01T15:15:00-07:00
+featured_image: /interviews/images/pic-default.jpg
+categories : [ "AutonoTalks" ]
 tags : [ "dev", "hugo", "autono"]
-categories : [ "dev" ]
 layout: post
 type:  "interviews"
 highlight: false

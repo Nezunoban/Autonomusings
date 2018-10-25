@@ -4,8 +4,10 @@ title = "Autonomusings"
 
 theme = ["autono"]
 relatedPosts = true
-## Test comment
 publishDir = "docs"
+canonifyURLs = true
+
+summaryLength = 20
 
 
 ## Hugo Built-in Features
@@ -22,7 +24,8 @@ publishDir = "docs"
     author = "Autonomusings"
     # title = "Title"
     # description = "..."
-    authorimage = "/img/logo.png"
+    authorimage = "img/logo.png"
+    authorimagesmall = "img/logosmall.svg"
     dateformat = "Jan 2, 2006"
     highlightjs = true
     highlightjsstyle = "github"

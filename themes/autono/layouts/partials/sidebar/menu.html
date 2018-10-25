@@ -4,13 +4,13 @@
 		{{ range .Site.Menus.main }} 
 			{{ if .HasChildren }}
 			<li {{ if $currentPage.HasMenuCurrent "main" . }}class="active"{{ end }}>
-				<a href="#">{{ .Pre }}
+				<a  class="sidebar-nav__link" href="#">{{ .Pre }}
 					<span>{{ .Name }}</span>
 				</a>
 				<ul class="sidebar-nav">
 					{{ range .Children }}
 					<li {{ if $currentPage.IsMenuCurrent "main" . }}class="active"{{ end }}>
-						<a href="{{ .URL }}">{{ .Name | title }}</a>
+						<a class="sidebar-nav__link" href="{{ .URL }}">{{ .Name | title }}</a>
 					</li>
 					{{ end }}
 				</ul>

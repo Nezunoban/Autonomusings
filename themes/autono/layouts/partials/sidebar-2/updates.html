@@ -1,0 +1,32 @@
+<h1 class="section-title upper">Updates</h1>
+<div class="sidebar__updates">
+	
+		{{ range first 5 (where .Site.Pages "Type" "update")}}
+		<div class="sidebar-post-list__item">
+			<div class="item__wrap">
+				<span class="item__title--small">
+					<a href="#" data-micromodal-trigger="modal-{{ .UniqueID }}">{{ .Title }}</a>
+				</span>
+				{{ if .Draft }}<sup><i class="fas fa-comment-dots fa-xs"></i></sup>{{ end }}
+				<span class="item__categories">
+				<!-- categories -->
+					{{ with .Params.categories }}
+					{{ $total := len . }}
+					{{ if gt $total 0 }}
+					{{ $total := sub $total 1 }}
+						{{ range $i, $cat := sort . }}
+							<a class="badge badge-category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
+							{{ if lt $i $total }}•{{ end }}
+						{{ end }}
+					{{ end }}
+					{{ end }}
+				</span>
+				<span class="item__date">
+				{{ .Date.Format (.Site.Params.dateformat | default "Mon 1.7.06") }}
+				</span>
+			</div>
+		</div>
+		
+		{{ end }}
+
+	</div>

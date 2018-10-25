@@ -3,13 +3,14 @@ title: "Robotic Jellyfish"
 author: Author Name
 date: 2018-10-13T14:51:16-07:00
 lastmod: 2018-10-13T14:51:16-07:00
-featured_image: musings/images/pic01.jpg
+featured_image: /musings/images/pic-default.jpg
+categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]
-categories : [ "autonomation" ]
 layout: post
 type:  "musings"
 highlight: false
 draft: false
+summarylength : 20
 ---
 
 **Insert Lead paragraph here.**

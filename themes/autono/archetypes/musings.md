@@ -3,13 +3,14 @@ title: "{{ replace .Name "-" " " | title }}"
 author: Josh Ouellette
 date: {{ .Date }}
 lastmod: {{ .Date }}
-featured_image: musings/images/pic01.jpg
+featured_image: /musings/images/pic-default.jpg
+categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]
-categories : [ "autonomation" ]
 layout: post
 type:  "musings"
 highlight: false
 draft: true
+summarylength : 20
 ---
 
 **Insert Lead paragraph here.**

@@ -1,4 +1,5 @@
 .post__meta {
+  font-family: $secondary-font-family;
   font-size: $meta-font-size;
   color: $meta-color;
   font-weight: $meta-font-weight;
@@ -30,8 +31,9 @@
  
 .post__subtitle {
   display: block;
+  font-family: $secondary-font-family;
   font-size: $post__subtitle-font-size;
-  font-style: italic;
+  //font-style: italic;
   padding: 0 0 1rem 0;
 }
 
