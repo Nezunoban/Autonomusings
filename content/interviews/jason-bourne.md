@@ -7,7 +7,8 @@ subject_image: /interviews/images/people/pic-default.png
 authors: ["Josh Ouellette"]
 date: 2018-10-01T15:15:00-07:00
 lastmod: 2018-10-01T15:15:00-07:00
-featured_image: /interviews/images/pic-default.jpg
+featured_image: /Autonomusings/interviews/images/interview
+featured_type: png
 categories : [ "AutonoTalks" ]
 tags : [ "automation", "machine learning", "ai"]
 layout: interview

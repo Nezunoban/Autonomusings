@@ -3,6 +3,8 @@
   {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
 {{ partial "footer/font-awesome-js.html" . }}
+{{ partial "footer/micromodal-js.html" . }}
+{{ partial "footer/lazyload-js.html" . }}
 {{ partial "highlight-js.html" . }}
 {{ with .Site.Params.toc }}
 {{ if eq . "tocbot" }}

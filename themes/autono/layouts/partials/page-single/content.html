@@ -1,6 +1,7 @@
 <div class="featured__wrap--fixed">
   <div class="featured__container">
-     <img {{ with .Params.featured_image }} class="featured_image" src="{{ . }}"{{ end }} alt="{{ .Title }}">
+    <!--<img {{ with .Params.featured_image }} class="featured_image" src="{{ . }}"{{ end }} alt="{{ .Title }}">-->
+      {{ partial "img-feature.html" . }}
   </div>
 </div>
 <article class="article--featured">

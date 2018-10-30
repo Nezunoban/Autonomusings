@@ -20,18 +20,18 @@
         /* old browsers */
             color: $purple;
         /* IE10+ */ 
-        background: -ms-linear-gradient(top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        background: -ms-linear-gradient(bottom right, $gradient-color-1 0%, $gradient-color-2 100%);
         /* Mozilla Firefox */ 
-        background: -moz-linear-gradient(top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        background: -moz-linear-gradient(bottom right, $gradient-color-1 0%, $gradient-color-2 100%);
         /* Opera */ 
-        background: -o-linear-gradient(top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        background: -o-linear-gradient(bottom right, $gradient-color-1 0%, $gradient-color-2 100%);
         /* Webkit (Safari/Chrome 10) */ 
-        background: -webkit-gradient(linear, right top, left bottom, color-stop(0, $gradient-color-1), color-stop(100, $gradient-color-2));
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0, $gradient-color-1), color-stop(100, $gradient-color-2));
         /* Webkit (Chrome 11+) */ 
-        background: -webkit-linear-gradient(top right, $gradient-color-1 0%, $gradient-color-2 100%);
+        background: -webkit-linear-gradient(bottom right, $gradient-color-1 0%, $gradient-color-2 100%);
         /* W3C Markup */ 
-        background: linear-gradient(to top right, $gradient-color-1 0%, $gradient-color-2 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-color-1', endColorstr='$gradient-color-2',GradientType=1 );
+        background: linear-gradient(to bottom right, $gradient-color-1 0%, $gradient-color-2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-color-2', endColorstr='$gradient-color-1',GradientType=1 );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 

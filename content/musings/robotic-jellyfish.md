@@ -3,7 +3,8 @@ title: "Robotic Jellyfish"
 authors: ["Josh Ouellette"]
 date: 2018-10-13T14:51:16-07:00
 lastmod: 2018-10-13T14:51:16-07:00
-featured_image: /musings/images/pic-default.jpg
+featured_image: /Autonomusings/musings/images/musing
+featured_type: png
 categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]
 layout: musing

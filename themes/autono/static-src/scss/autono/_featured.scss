@@ -33,6 +33,11 @@
 		margin: 0;
 		position: absolute;
 	}
+	.featured-image .picture {
+			max-height: 28rem;
+			overflow: hidden;
+
+	}
 }
 
 @media (min-width: 1200px) {

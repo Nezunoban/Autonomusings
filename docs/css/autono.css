@@ -540,9 +540,9 @@ footer {
   /* Webkit (Safari/Chrome 10) */
   /* Webkit (Chrome 11+) */
   /* W3C Markup */
-  background: -webkit-gradient(linear, left bottom, right top, from(#FD6E1B), to(#5d378b));
-  background: linear-gradient(to top right, #FD6E1B 0%, #5d378b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-color-1', endColorstr='$gradient-color-2',GradientType=1 );
+  background: -webkit-gradient(linear, left top, right bottom, from(#FD6E1B), to(#5d378b));
+  background: linear-gradient(to bottom right, #FD6E1B 0%, #5d378b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-color-2', endColorstr='$gradient-color-1',GradientType=1 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1102,6 +1102,10 @@ figcaption p {
   margin-top: 0;
 }
 
+.author-image {
+  padding: .6rem;
+}
+
 .sidebar {
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #353e4a;
@@ -1354,6 +1358,10 @@ figcaption p {
     border-radius: 0;
     margin: 0;
     position: absolute;
+  }
+  .featured-image .picture {
+    max-height: 28rem;
+    overflow: hidden;
   }
 }
 
@@ -1909,6 +1917,9 @@ a.badge-tag:focus {
   .interview__subject-info .autonotalks,
   .interview__subject-info .autonotalks-presents {
     font-size: .7rem;
+  }
+  .page-updates.updates .section__title {
+    display: none;
   }
 }
 

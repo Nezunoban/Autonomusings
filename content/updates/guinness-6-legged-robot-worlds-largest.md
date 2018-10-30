@@ -5,7 +5,8 @@ source_name: www.upi.com
 source_url: https://www.upi.com/Guinness-dubs-six-legged-walking-robot-the-worlds-largest/7151537206326/
 date: 2018-10-18T12:08:52-07:00
 lastmod: 2018-10-18T12:08:52-07:00
-featured_image: /updates/images/pic-default.jpg
+featured_image: /Autonomusings/updates/images/update
+featured_type: png
 categories : [ "automation" ]
 tags : [ "automation", "machine learning", "ai"]
 layout: update

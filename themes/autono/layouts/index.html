@@ -20,25 +20,35 @@
     <h1 class="upper front__header">Musings</h1>
     <div class="post-list">
       {{ $paginator := .Paginate (where .Data.Pages "Section" "in" (slice "musings" "interviews")) }}
-      {{ range $paginator.Pages }}
+      {{ range $index, $value := $paginator.Pages }}
         <div class="post-list__item">
           <span class="featured-time">
             <i class="fas fa-clock"></i> {{ .ReadingTime }} min
           </span>
-
-            {{ if (isset .Params "subject_image") }}
-              <div class="interview__subject-image">
-                  <a href="{{ .RelPermalink }}">
-                    <img class="profile-image img--circle" {{ with .Params.subject_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
-                  </a>
-              </div>
-              {{ else }}
+          {{ if (eq $index 0) }}
               <div class="featured-image">
                 <a href="{{ .RelPermalink }}">
-                  <img {{ with .Params.featured_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+                  {{ partial "img-feature.html" . }}
                 </a>
               </div>
+          {{ else }}
+
+            {{ if (isset .Params "subject_image") }}
+            <div class="interview__subject-image">
+                <a href="{{ .RelPermalink }}">
+                  <img class="profile-image img--circle" {{ with .Params.subject_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+                </a>
+            </div>
+            {{ else }}
+            <div class="featured-image featured-image-thumb">
+              <a href="{{ .RelPermalink }}">
+                {{ partial "img-feature-thumb.html" . }}
+              </a>
+            </div>
             {{ end }}
+
+          {{ end }}
+
 
             <div class="front-item__wrap">
             <span class="item__categories">

@@ -5,7 +5,8 @@ source_name: Name of Publication
 source_url: https://www..com
 date: 2018-10-13T15:16:15-07:00
 lastmod: 2018-10-13T15:16:15-07:00
-featured_image: /updates/images/pic-default.jpg
+featured_image: /Autonomusings/updates/images/update
+featured_type: png
 tags : [ "exploration", "vehicles", "safety"]
 categories : [ "vehicles" ]
 layout: update

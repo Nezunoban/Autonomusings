@@ -1,0 +1,27 @@
+
+<!-- The shortcode functionality - in layouts/shortcodes/img-feature.html -->
+<div class="picture" class="featured_image" >
+	<picture>
+	<!-- Larger screens -->
+	<source
+			media="(min-width: 1000px)"
+			srcset="{{ .Params.featured_image }}.{{ .Params.featured_type }} 1x,
+							{{ .Params.featured_image }}@2x.{{ .Params.featured_type }} 2x">
+	<!-- Large screens -->
+	<source
+			media="(min-width: 535px)"
+			srcset="{{ .Params.featured_image }}-md.{{ .Params.featured_type }} 1x,
+							{{ .Params.featured_image }}-md@2x.{{ .Params.featured_type }} 2x">
+	<!-- Small screens -->
+	<source
+			media="(max-width: 534px)"
+			srcset="{{ .Params.featured_image }}-sm.{{ .Params.featured_type }} 1x,
+							{{ .Params.featured_image }}-sm@2x.{{ .Params.featured_type }} 2x">
+	<!-- Fallback -->
+	<img
+			data-original="{{ .Params.featured_image }}.{{ .Params.featured_type }}"
+			data-original-set="{{ .Params.featured_image }}@2x.{{ .Params.featured_type }} 2x"
+			alt="{{ .Title }}"
+			src="{{ .Params.featured_image }}.{{ .Params.featured_type }}">
+	</picture>
+</div>

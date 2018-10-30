@@ -3,7 +3,8 @@ title: "{{ replace .Name "-" " " | title }}"
 authors: ["Josh Ouellette"]
 date: {{ .Date }}
 lastmod: {{ .Date }}
-featured_image: /musings/images/pic-default.jpg
+featured_image: /Autonomusings/musings/images/musing
+featured_type: png
 ## Every Musing needs 1 category
 categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]

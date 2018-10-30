@@ -13,7 +13,7 @@
           {{ else }}
           <div class="featured-image">
             <a href="{{ .RelPermalink }}">
-              <img {{ with .Params.featured_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+                {{ partial "img-feature-thumb.html" . }}
             </a>
           </div>
         {{ end }}
