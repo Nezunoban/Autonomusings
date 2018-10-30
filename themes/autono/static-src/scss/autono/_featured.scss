@@ -36,7 +36,12 @@
 	.featured-image .picture {
 			max-height: 28rem;
 			overflow: hidden;
+	}
 
+	.featured__container img {
+		object-fit: cover;
+		width: 100%;
+		height: 28rem;
 	}
 }
 
@@ -64,6 +69,12 @@
 		border-radius: 0;
 		margin: 0;
 		position: absolute;
+	}
+
+	.featured__container img {
+		object-fit: cover;
+		width: 100%;
+		height: 20rem;
 	}
 }
 
