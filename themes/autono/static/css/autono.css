@@ -1937,7 +1937,8 @@ a.badge-tag:focus {
   .interview__subject-info .autonotalks-presents {
     font-size: .7rem;
   }
-  .page-updates.updates .section__title {
+  .page-updates.updates .section__title,
+  .page-musings.musings .section__title {
     display: none;
   }
 }
