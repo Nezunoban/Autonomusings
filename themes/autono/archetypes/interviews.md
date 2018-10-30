@@ -7,7 +7,8 @@ subject_image: /interviews/images/people/pic-default.jpg
 authors: ["Josh Ouellette"]
 date: {{ .Date }}
 lastmod: {{ .Date }}
-featured_image: /interviews/images/pic-default.jpg
+featured_image: /Autonomusings/interviews/images/interview
+featured_type: png
 ## Categories: Must be set to "AutonoTalks" for proper formatting for interview in front page list
 categories : [ "AutonoTalks" ]
 tags : [ "automation", "machine learning", "ai"]

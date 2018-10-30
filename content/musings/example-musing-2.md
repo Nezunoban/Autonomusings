@@ -3,7 +3,8 @@ title: "Example Musing 2"
 authors: ["Josh Ouellette"]
 date: 2018-10-15T12:24:08-07:00
 lastmod: 2018-10-15T12:24:08-07:00
-featured_image: /musings/images/pic-default.jpg
+featured_image: /Autonomusings/musings/images/musing
+featured_type: png
 ## Every Musing needs 1 category
 categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]

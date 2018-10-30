@@ -5,7 +5,8 @@ source_name: Name of Publication
 source_url: https://www..com
 date: {{ .Date }}
 lastmod: {{ .Date }}
-featured_image: /updates/images/pic-default.jpg
+featured_image: /Autonomusings/updates/images/update
+featured_type: png
 categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]
 layout: update
