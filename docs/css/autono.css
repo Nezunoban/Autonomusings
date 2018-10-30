@@ -209,6 +209,13 @@ footer {
   position: relative;
 }
 
+.modal__header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 10rem;
+}
+
 .modal__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -1363,6 +1370,12 @@ figcaption p {
     max-height: 28rem;
     overflow: hidden;
   }
+  .featured__container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 28rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1388,6 +1401,12 @@ figcaption p {
     border-radius: 0;
     margin: 0;
     position: absolute;
+  }
+  .featured__container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 20rem;
   }
 }
 
