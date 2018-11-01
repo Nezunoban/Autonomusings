@@ -18,16 +18,6 @@
 		}
 	}
 	
-
-	@keyframes marginUp {
-		0% 		{ transform: translateY(5rem); }
-		100% 	{ transform: translateY(0); }
-	}
-
-	@keyframes fadeIn {
-		0%		{ opacity: 0; }
-		100%	{ opacity: 1; }
-	}
 }
 
 @media (min-width: 1300px) {
@@ -40,6 +30,7 @@
 		}
 	}
 	.page-autonomusings {
+
 		.sidebar-2 {
 			position: absolute;
 			right: 1rem;
@@ -50,15 +41,32 @@
 		.content {
 			animation: 1s ease-out 0s 1 slideUp;
 		}
+		.post-list,
+		.sidebar__updates {
+			animation: .5s ease-out 0s 1 fadeIn;
+		}
 
 	}
 
-	@keyframes slideUp {
-		0% 		{	transform: translateY(2rem);	}
-		100% 	{	transform: translateY(0);	}
-	}
-	@keyframes slideDown {
-		0% 		{	transform: translateY(-2rem);	}
-		100% 	{	transform: translateY(0);	}
-	}
+	
+}
+
+
+@keyframes marginUp {
+	0% 		{ transform: translateY(5rem); }
+	100% 	{ transform: translateY(0); }
+}
+
+@keyframes slideUp {
+	0% 		{	transform: translateY(2rem);	}
+	100% 	{	transform: translateY(0);	}
+}
+@keyframes slideDown {
+	0% 		{	transform: translateY(-2rem);	}
+	100% 	{	transform: translateY(0);	}
+}
+
+@keyframes fadeIn {
+	0%		{ opacity: 0; }
+	100%	{ opacity: 1; }
 }
