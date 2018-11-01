@@ -7,8 +7,8 @@ featured_image: /Autonomusings/musings/images/musing
 featured_type: png
 categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]
-layout: musing
-type:  "musings"
+layout: post
+type:  "musing"
 highlight: false
 draft: false
 summarylength : 20
