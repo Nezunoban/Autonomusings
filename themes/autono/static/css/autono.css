@@ -2363,6 +2363,10 @@ a.badge-tag:focus {
     -webkit-animation: 1s ease-out 0s 1 marginUp;
             animation: 1s ease-out 0s 1 marginUp;
   }
+  .sidebar__subscribe {
+    -webkit-animation: 1s ease-out 0s 1 slideUp;
+            animation: 1s ease-out 0s 1 slideUp;
+  }
 }
 
 @media (min-width: 1300px) {
