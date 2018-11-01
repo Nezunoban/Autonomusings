@@ -1944,7 +1944,7 @@ a.badge-tag:focus {
 }
 
 @media (min-width: 331px) {
-  /*  TABS  (20-768) */
+  /*  TABS  ( 331+ ) */
   .tabs .switch {
     display: none;
     width: 68%;
@@ -2333,7 +2333,7 @@ a.badge-tag:focus {
   .sidebar-2 {
     position: absolute;
     right: 1rem;
-    top: 7rem;
+    top: 9rem;
     max-width: 20%;
   }
 }

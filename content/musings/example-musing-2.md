@@ -8,8 +8,8 @@ featured_type: png
 ## Every Musing needs 1 category
 categories : [ "automation" ]
 tags : [ "manufacturing", "efficiency", "automation"]
-layout: musing
-type:  "musings"
+layout: post
+type:  "musing"
 highlight: false
 draft: false
 summarylength : 20

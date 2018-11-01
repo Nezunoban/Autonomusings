@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 	{{ block "header" . }}{{ end }}
-	<body class="page-{{ .Title | urlize }} {{ .Section | urlize }}">
+	<body class="page-{{ .Title | urlize }} {{ .Section | urlize }} {{ .Type | urlize }}">
 		<div class="site__nav">
 			{{ partial "sidebar.html" . }}
 		</div>

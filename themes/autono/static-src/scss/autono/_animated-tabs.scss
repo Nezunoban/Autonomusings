@@ -1,0 +1,38 @@
+
+@media (min-width: 0px) and (max-width: 767px) {
+    nav a {
+        transition: .2s;
+    }
+
+    /* ========================
+        Lava-lamp-line:
+    ======================== */
+    .effect {
+        position: absolute;
+        left: 15%;
+        transition: 0.2s ease-in-out;
+    }
+    nav a:nth-child(1):focus ~ .effect {
+        left: 15%;
+        /* the middle of the first <a> */
+    }
+    nav a:nth-child(2):focus ~ .effect {
+        left: 40%;
+        /* the middle of the second <a> */
+    }
+    nav a:nth-child(3):focus ~ .effect {
+        left: 65%;
+        /* the middle of the third <a> */
+    }
+    nav a:nth-child(4):focus ~ .effect {
+        left: 90%;
+        /* the middle of the forth <a> */
+    }
+    .ph-line-nav .effect {
+        width: 55px;
+        height: 2px;
+        bottom: 5px;
+        background: #00ABE8;
+        margin-left:-45px;
+    }
+}
