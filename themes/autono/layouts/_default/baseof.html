@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.LanguageCode }}" class="no-focus-outline">
 	{{ block "header" . }}{{ end }}
 	<body class="page-{{ .Title | urlize }} {{ .Section | urlize }} {{ .Type | urlize }}">
 		<div class="site__nav">
@@ -20,6 +20,7 @@
 				{{ partial "sidebar-2.html" . }}
 			</div>
 			{{ block "footer" . }}{{ end }}
+			{{ partial "footer/no-focus-outline-js.html" . }}
 		</div>
 	</body>
 </html>
