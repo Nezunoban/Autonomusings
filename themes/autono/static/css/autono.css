@@ -2267,7 +2267,7 @@ a.badge-tag:focus {
 @media (min-width: 1240px) {
   .site__nav,
   .sidebar {
-    width: 20%;
+    width: 22rem;
   }
   .site__main {
     width: 80%;
