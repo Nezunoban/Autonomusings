@@ -1152,6 +1152,10 @@ figcaption p {
   padding-left: 0;
 }
 
+.sidebar-nav li {
+  margin-top: .25rem;
+}
+
 .sidebar-nav li a {
   text-transform: uppercase;
   font-weight: 600;

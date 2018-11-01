@@ -30,12 +30,17 @@
   }
 }
 
+
+
 .sidebar-nav {
   text-align: left;
   list-style: none;
   margin-bottom: 2rem;
   margin-top: 2rem;
   padding-left: 0;
+  li {
+    margin-top: .25rem;
+  }
   li a {
     text-transform: uppercase;
     font-weight: 600;
@@ -96,4 +101,5 @@
 .img--caption {
 	font-style: italic;
 }
+
 
