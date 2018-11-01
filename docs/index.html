@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" class="no-focus-outline">
 	
   <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
@@ -933,6 +933,14 @@ Lacus auctor efficitur tempor placerat, dictum volutpat mi vitae viverra porta n
 </script>
 
 
+			<script>
+    
+    document.body.addEventListener('keyup', function(e) {
+    if (e.which === 9)   {
+        document.documentElement.classList.remove('no-focus-outline');
+    }
+    });
+</script>
 		</div>
 	</body>
 </html>
