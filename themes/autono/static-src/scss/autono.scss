@@ -5,10 +5,11 @@
 @import "poole/posts";
 // autono
 @import 'autono/mixins';
+@import 'autono/no-focus-outline';
 @import "autono/micromodal.scss";
-@import "autono/executive-summary.scss";
-@import "autono/pullquotes.scss";
-@import "autono/subscribe.scss";
+@import "autono/executive-summary";
+@import "autono/pullquotes";
+@import "autono/subscribe";
 @import 'autono/base';
 @import 'autono/sidebar';
 @import 'autono/list';

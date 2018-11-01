@@ -168,6 +168,11 @@ footer {
       @include accessibility;
     }
  */
+.no-focus-outline a:focus,
+.no-focus-outline button:focus {
+  outline: none;
+}
+
 /**************************\
   Basic Modal Styles
 \**************************/
