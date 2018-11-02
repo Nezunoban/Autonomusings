@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nezunoban.github.io/Autonomusings/updates/new-technology/</loc>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nezunoban.github.io/Autonomusings/about/privacy-policy/</loc>
     <lastmod>2018-10-23T11:43:09-07:00</lastmod>
   </url>
@@ -20,11 +25,6 @@
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/musings/example-musing-2/</loc>
     <lastmod>2018-10-15T12:24:08-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nezunoban.github.io/Autonomusings/interviews/jack-ryan/</loc>
-    <lastmod>2018-10-14T15:15:00-07:00</lastmod>
   </url>
   
   <url>
@@ -59,7 +59,7 @@
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/authors/josh-ouellette/</loc>
-    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
   </url>
   
   <url>
@@ -76,25 +76,25 @@
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/authors/</loc>
-    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nezunoban.github.io/Autonomusings/categories/automation/</loc>
-    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/tags/automation/</loc>
-    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nezunoban.github.io/Autonomusings/categories/automation/</loc>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/</loc>
-    <lastmod>2018-10-23T11:43:09-07:00</lastmod>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -106,13 +106,13 @@
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/categories/</loc>
-    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/tags/efficiency/</loc>
-    <lastmod>2018-10-16T12:24:08-07:00</lastmod>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -136,7 +136,7 @@
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/tags/manufacturing/</loc>
-    <lastmod>2018-10-16T12:24:08-07:00</lastmod>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -160,18 +160,18 @@
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/updates/</loc>
-    <lastmod>2018-10-18T12:08:52-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nezunoban.github.io/Autonomusings/categories/vehicles/</loc>
-    <lastmod>2018-10-13T15:16:15-07:00</lastmod>
+    <lastmod>2018-11-02T09:15:45-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nezunoban.github.io/Autonomusings/tags/vehicles/</loc>
+    <lastmod>2018-10-13T15:16:15-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nezunoban.github.io/Autonomusings/categories/vehicles/</loc>
     <lastmod>2018-10-13T15:16:15-07:00</lastmod>
     <priority>0</priority>
   </url>

@@ -3,14 +3,32 @@ title: "{{ replace .Name "-" " " | title }}"
 subject_name: Jason Bourne
 subject_title: Title
 subject_organization: Organizational Company
+
+## SUBJECT Image Dimensions ----------- ##
+##
+##    foo.png         ( 196 x 196 )
+## 
 subject_image: /interviews/images/people/pic-default.jpg
+## ------------------------------------- ##
+
 authors: ["Josh Ouellette"]
 date: {{ .Date }}
 lastmod: {{ .Date }}
+
+## Featured Image Dimensions ----------- ##
+##  
+##    foo.png         ( 1500 x 1000 )
+##    foo-md.png      ( 1125 x 750 )
+##    foo-sm@2x.png   ( 750 x 500 )
+##    foo-sm.png      ( 495 x 330 )
+## 
 featured_image: /Autonomusings/interviews/images/interview
 featured_type: png
-## Categories: Must be set to "AutonoTalks" for proper formatting for interview in front page list
+## ------------------------------------- ##
+
+## Categories: ( NOTE: Must be set to "AutonoTalks" for proper formatting for interview in front page list )
 categories : [ "AutonoTalks" ]
+
 tags : [ "automation", "machine learning", "ai"]
 layout: interview
 type:  "interview"
@@ -20,15 +38,55 @@ summarylength : 20
 
 ## Do you want the executive summary for this post?
 executive_summary: true
+
 ## A sentence or two to summarize the piece ('' required for colon)
 executive_intro : 'In this musing, we discuss the matter at hand, including:'
+
 ## Bullet Point summary - Up to 5 points allowed 
 executive_point1 : The matter at hand
 executive_point2 : Of course we also touch on the importance of the matter at hand, for educational purposes, including long points
 executive_point3 : The matter at hand
+
+
+#######################   SHORTCODES   ########################
+
+## Mailchimp ----------- ##
+##
+## {{< mailchimp >}}
+##
+## --------------------- ##  ( NOTE: You can change list/subscription configuration in /data/mailchimp.toml )
+
+## Image --------------- ##
+##
+## {{< img src="/interviews/jack-ryan/interview" type="png" alt="" caption="On site at Renham Industries" >}}
+##
+## --------------------- ##  ( NOTE: allows for responsive suffixes to be added automatically -- caption preferable but not necessary )
+
+## Soundcloud ---------- ##
+##
+## {{< soundcloud 412671942 >}}
+##
+## --------------------- ##  ( NOTE: You can change list or account configuration in /data/mailchimp.toml )
+
+
+
+#######################   FORMATTING   ########################
+
+## Pullqoute ----------- ##
+##
+## {{% pullquote left %}} "Sollicitudin ornare odio blandit" {{% /pullquote %}} 
+##
+## --------------------- ##  ( NOTE: left is preferable, but you can do right if you'd like )
+
+## Blockquote ---------- ##
+##
+## >Sollicitudin . . .
+##
+## --------------------- ##  ( NOTE: blockquotes with multiple lines or lists or bullets require ">" for each line )
+
 ---
 
-{{< soundcloud 412671942 >}}
+[//]: # ( SOUNDCLOUD INTEGRATION SHORTCODE:     {{< soundcloud 412671942 >}} )
 
 **Insert Lead paragraph here.**
 
