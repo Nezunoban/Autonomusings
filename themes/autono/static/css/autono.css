@@ -169,7 +169,9 @@ footer {
     }
  */
 .no-focus-outline a:focus,
-.no-focus-outline button:focus {
+.no-focus-outline button:focus,
+.no-focus-outline input:focus,
+.no-focus-outline label:focus {
   outline: none;
 }
 
