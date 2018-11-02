@@ -2227,6 +2227,10 @@ a.badge-tag:focus {
     padding-bottom: 2rem;
     padding-top: 2rem;
   }
+  .about .content,
+  .authors .content {
+    padding-top: 4rem;
+  }
   .front-item__wrap {
     margin-left: 16rem;
     clear: none;
