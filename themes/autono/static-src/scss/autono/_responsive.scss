@@ -655,6 +655,11 @@
     width: 80%;
   }
 
+  .sidebar {
+    .author-image {
+      min-height: 279px;
+    }
+  }
   .sidebar-2__container {
     padding: 0rem 3rem;
   }
