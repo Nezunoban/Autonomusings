@@ -590,7 +590,14 @@
 	.content {
 		padding-bottom: 2rem;
 		padding-top: 2rem;
-	}
+  }
+  
+  .about,
+  .authors {
+    .content {
+      padding-top: 4rem;
+    }
+  }
 
 	.front-item__wrap {
 		margin-left: 16rem;
