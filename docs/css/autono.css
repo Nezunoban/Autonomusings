@@ -2287,6 +2287,9 @@ a.badge-tag:focus {
   .site__main {
     width: 80%;
   }
+  .sidebar .author-image {
+    min-height: 259px;
+  }
   .sidebar-2__container {
     padding: 0rem 3rem;
   }
