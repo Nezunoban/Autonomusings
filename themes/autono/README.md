@@ -65,7 +65,7 @@ __`Autono`__ essentially inherits most of Hyde's [options](https://github.com/sp
   ```
 
 
-### Customisations
+### Customizations
 
 * Most of the customisable SCSS styles in [_static-src/scss/autono_](https://github.com/Nezunoban/Autonomusings/tree/master/themes/autono/static-src/scss/autono) and Hugo templates in [_autono/layouts_](https://github.com/Nezunoban/Autonomusings/tree/master/themes/autono/blob/master/layouts) are modularised and can be altered/adapted easily.
 
@@ -139,15 +139,6 @@ If you want to adjust the portfolio page to your needs, please have a look at th
 
 ![A post in autono](https://github.com/Nezunoban/autono/raw/master/images/post.png)
 
-### Portfolio
-
-![Portfolio autono](https://github.com/Nezunoban/autono/raw/master/images/portfolio.png)
-
-
-
-### Mobile Mode with Collapsible Menu
-
-<img src='https://github.com/Nezunoban/autono/raw/master/images/mobile.png' alt='autono in mobile mode' width='60%'>
 
 ## Author(s)
 
