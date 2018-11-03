@@ -132,6 +132,6 @@ Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum
 
 Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
 
-{{< img src="/interviews/jack-ryan/interview" type="png" alt="" caption="Jack on site at Renham Industries" >}}
+{{< img src="/interviews/images/interview" type="png" alt="" caption="Jack on site at Renham Industries" >}}
 
 Sollicitudin ornare odio blandit aenean enim lacus accumsan elementum vestibulum porta mauris lorem, ullamcorper class fermentum sem hendrerit ante augue penatibus scelerisque felis leo proin,ad nascetur venenatis sodales dignissim viverra suspendisse turpis convallis condimentum sapien.
